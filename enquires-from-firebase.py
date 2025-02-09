@@ -75,7 +75,7 @@ def fetch_and_update_google_sheet():
         body={"values": sheet_data}
     ).execute()
 
-    print("Enquiries updated in Google Sheets")
+    print("✅ Enquiries updated in Google Sheets")
 
 # Run the function
 fetch_and_update_google_sheet()
