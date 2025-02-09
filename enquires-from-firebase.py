@@ -73,15 +73,15 @@ def flatten_value(value):
         return json.dumps(value, ensure_ascii=False)
     return value
 
-# Fetch and process Firestore data
+# Fetch and process Firestore data with sorting
 def fetch_firestore_data(collection_name):
     try:
         db = get_firestore_client()
         collection_ref = db.collection(collection_name)
-        # print(f"🔍 Fetching data from Firestore collection: {collection_name}...")
         docs = collection_ref.stream()
         rows = []
         all_fields = set()
+        
         for doc in docs:
             item = doc.to_dict()
             item["id"] = doc.id  # Include Firestore Document ID
@@ -90,7 +90,11 @@ def fetch_firestore_data(collection_name):
             item = {k: flatten_value(v) for k, v in item.items()}
             all_fields.update(item.keys())
             rows.append(item)
-        print(f"✅ Successfully fetched {len(rows)} records from Firestore.")
+
+        # Sort data in descending order based on 'added' column
+        rows.sort(key=lambda x: x.get("added", ""), reverse=True)
+
+        print(f"✅ Successfully fetched {len(rows)} records from Firestore (sorted by 'added').")
         return rows, sorted(all_fields)
     except Exception as e:
         print(f"❌ Error fetching data from Firestore: {e}")
