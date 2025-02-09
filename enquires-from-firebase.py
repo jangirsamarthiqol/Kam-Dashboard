@@ -57,15 +57,22 @@ def get_sheets_service():
         print(f"❌ Error initializing Google Sheets API: {e}")
         return None
 
-# Convert Unix timestamps to human-readable dates
+# Convert Unix timestamps to human-readable dates in "9/Jan/2025" format
 def convert_unix_to_date(unix_timestamp):
     try:
         if not unix_timestamp or not isinstance(unix_timestamp, (int, float, str)):
             return ""
-        return datetime.fromtimestamp(int(unix_timestamp), tz=timezone.utc).strftime('%Y-%m-%d')
+        dt = datetime.fromtimestamp(int(unix_timestamp), tz=timezone.utc)
+        day = dt.day  # Ensures no leading zero
+        month = dt.strftime('%b')  # Shortened month name (Jan, Feb, etc.)
+        year = dt.year  # Full year
+
+        # Use a zero-width space to prevent Google Sheets from adding an apostrophe
+        return f"\u200B{day}/{month}/{year}"  
     except Exception as e:
         print(f"⚠️ Error converting timestamp {unix_timestamp}: {e}")
         return ""
+
 
 # Flatten values for JSON serialization
 def flatten_value(value):
