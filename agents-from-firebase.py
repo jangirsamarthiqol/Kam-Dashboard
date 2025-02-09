@@ -11,7 +11,6 @@ import codecs
 
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.buffer, 'strict')
 
-
 # Load environment variables
 load_dotenv()
 
@@ -83,7 +82,7 @@ def fetch_firestore_data(collection_name):
                 print(f"⚠️ Error processing document {doc.id}: {doc_error}")
 
         print(f"✅ Successfully fetched {len(rows)} records from Firestore.")
-        return rows, sorted(all_fields)
+        return rows, list(all_fields)  # Keeping order as per Firestore structure
     except Exception as e:
         print(f"❌ Error fetching data from Firestore: {e}")
         return [], []
@@ -116,12 +115,17 @@ def write_to_google_sheet(data, spreadsheet_id, sheet_name, all_fields):
 
         print(f"✅ Google Sheet '{sheet_name}' opened successfully.")
         
-        headers = list(all_fields)
+        # Ensure "phonenumber" is the first column, "cpId" is the second, and preserve the rest of the fields in original Firestore order
+        predefined_order = ["phonenumber", "cpId"]
+        remaining_fields = [field for field in all_fields if field not in predefined_order]
+        headers = predefined_order + remaining_fields
+
+        # Arrange data to match the headers order
         formatted_data = [[item.get(field, "") for field in headers] for item in data]
-        
+
         sheet.clear()
         sheet.update("A1", [headers] + formatted_data)
-        print(f"✅ Data written successfully to Google Sheets.")
+        print(f"✅ Data written successfully to Google Sheets with 'phonenumber' as the first column and 'cpId' as the second column.")
     except Exception as e:
         print(f"❌ Error writing to Google Sheets: {e}")
 
@@ -136,8 +140,8 @@ def main():
         print("🔍 Firestore fetch completed, checking data...")
         
         if data:
-            spreadsheet_id = "17_9YH7wcHHlgMmBOp50AuYR0Kx0_7-DQMoO38RBI3vg"# Keep hardcoded if needed
-            sheet_name = "Sheet2"
+            spreadsheet_id = "17_9YH7wcHHlgMmBOp50AuYR0Kx0_7-DQMoO38RBI3vg"  # Keep hardcoded if needed
+            sheet_name = "Sheet1"
             print(f"🔍 Writing {len(data)} records to Google Sheets...")
             write_to_google_sheet(data, spreadsheet_id, sheet_name, all_fields)
         else:
