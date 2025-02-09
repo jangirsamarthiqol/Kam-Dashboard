@@ -3,19 +3,38 @@ from firebase_admin import credentials, firestore
 import gspread
 from google.oauth2.service_account import Credentials
 from datetime import datetime, timezone
+import json
+import os
+from dotenv import load_dotenv
+import sys
+import codecs
+
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout.buffer, 'strict')
 
 
-# Initialize Firebase Admin SDK
+# Load environment variables
+load_dotenv()
+
 def initialize_firebase():
     try:
-        cred = credentials.Certificate("./acn-resale-inventories-dde03-firebase-adminsdk-ikyw4-1d40de00d3.json")  # Path to Firestore service account key
-        firebase_admin.initialize_app(cred)
-        print("✅ Firebase initialized successfully.")
+        if not firebase_admin._apps:  # Prevent re-initialization
+            firebase_creds = {
+                "type": "service_account",
+                "project_id": os.getenv("FIREBASE_PROJECT_ID"),
+                "private_key_id": os.getenv("FIREBASE_PRIVATE_KEY_ID"),
+                "private_key": os.getenv("FIREBASE_PRIVATE_KEY").replace("\\n", "\n"),
+                "client_email": os.getenv("FIREBASE_CLIENT_EMAIL"),
+                "client_id": os.getenv("FIREBASE_CLIENT_ID"),
+                "token_uri": "https://oauth2.googleapis.com/token"
+            }
+            cred = credentials.Certificate(firebase_creds)
+            firebase_admin.initialize_app(cred)
+            print("✅ Firebase initialized successfully.")
+        else:
+            print("✅ Firebase already initialized.")
     except Exception as e:
         print(f"❌ Error initializing Firebase: {e}")
 
-
-# Convert Unix timestamp to readable date (DD/Mon/YYYY format)
 def convert_unix_to_date(unix_timestamp):
     try:
         if not unix_timestamp or not isinstance(unix_timestamp, (int, float, str)):
@@ -25,89 +44,70 @@ def convert_unix_to_date(unix_timestamp):
         print(f"⚠️ Error converting timestamp {unix_timestamp}: {e}")
         return ""
 
-
-# Clean phone numbers by removing +91, spaces, and ensuring correct numeric format
 def clean_phone_number(number):
     if not number:
         return ""
-    
     normalized_number = str(number).replace(" ", "").strip()
-    
     if normalized_number.startswith("+91"):
         normalized_number = normalized_number.replace("+91", "").strip()
-    
-    # Ensure it's numeric but remains a string to preserve formatting
     return int(normalized_number) if normalized_number.isdigit() else normalized_number
 
-
-# Convert list values to strings (comma-separated)
 def flatten_field(value):
     if isinstance(value, list):
-        return ", ".join(str(v) for v in value)  # Convert list to comma-separated string
+        return ", ".join(str(v) for v in value)
     return value
 
-
-# Fetch data from Firestore and process it
 def fetch_firestore_data(collection_name):
     try:
-        db = firestore.client()  # Get Firestore client
+        db = firestore.client()
         collection_ref = db.collection(collection_name)
-        docs = list(collection_ref.stream())  # Convert stream to list
+        print(f"🔍 Fetching data from Firestore collection: {collection_name}...")
 
-        if not docs:
-            print(f"⚠️ No documents found in Firestore collection: {collection_name}")
-            return [], []
-
-        all_fields = set()  # Track all possible field names
-
-        # Process each document
         rows = []
+        all_fields = set()
+        docs = collection_ref.stream()  # Efficient streaming
+
         for doc in docs:
             try:
                 item = doc.to_dict()
                 if not isinstance(item, dict):
                     print(f"⚠️ Unexpected data format in document {doc.id}: {item}")
                     continue
-
-                # Convert timestamps and clean phone numbers
                 item["phonenumber"] = clean_phone_number(item.get("phonenumber", ""))
                 item["added"] = convert_unix_to_date(item.get("added"))
                 item["lastModified"] = convert_unix_to_date(item.get("lastModified"))
-
-                # Convert lists to comma-separated strings
-                item = {k: flatten_field(v) for k, v in item.items()}  
-
-                # Track all available fields dynamically
+                item = {k: flatten_field(v) for k, v in item.items()}
                 all_fields.update(item.keys())
-
                 rows.append(item)
-
             except Exception as doc_error:
                 print(f"⚠️ Error processing document {doc.id}: {doc_error}")
 
         print(f"✅ Successfully fetched {len(rows)} records from Firestore.")
-        return rows, sorted(all_fields)  # Return sorted fields for consistency
-
+        return rows, sorted(all_fields)
     except Exception as e:
         print(f"❌ Error fetching data from Firestore: {e}")
         return [], []
 
-
-# Write data to a specific sheet within a Google Sheets document
 def write_to_google_sheet(data, spreadsheet_id, sheet_name, all_fields):
     try:
         if not data:
             print("⚠️ No data to write to Google Sheets.")
             return
         
-        scopes = ['https://www.googleapis.com/auth/spreadsheets']
-        credentials = Credentials.from_service_account_file("enquiry-tracking-1818988a416c.json", scopes=scopes)  # Replace with your Google Sheets API key
+        sheets_creds = {
+            "type": "service_account",
+            "project_id": os.getenv("GSPREAD_PROJECT_ID"),
+            "private_key_id": os.getenv("GSPREAD_PRIVATE_KEY_ID"),
+            "private_key": os.getenv("GSPREAD_PRIVATE_KEY").replace("\\n", "\n"),
+            "client_email": os.getenv("GSPREAD_CLIENT_EMAIL"),
+            "client_id": os.getenv("GSPREAD_CLIENT_ID"),
+            "token_uri": "https://oauth2.googleapis.com/token"
+        }
+        
+        credentials = Credentials.from_service_account_info(sheets_creds, scopes=['https://www.googleapis.com/auth/spreadsheets'])
         gc = gspread.authorize(credentials)
-        print("✅ Google Sheets API authenticated successfully.")
-        
         spreadsheet = gc.open_by_key(spreadsheet_id)
-        
-        # Try to get the sheet by name, otherwise create a new one
+
         try:
             sheet = spreadsheet.worksheet(sheet_name)
         except gspread.exceptions.WorksheetNotFound:
@@ -115,53 +115,35 @@ def write_to_google_sheet(data, spreadsheet_id, sheet_name, all_fields):
             print(f"✅ New sheet '{sheet_name}' created.")
 
         print(f"✅ Google Sheet '{sheet_name}' opened successfully.")
-
-        # Define the required order for columns
-        primary_fields = [
-            "phonenumber", "name", "cpId", "verified", "blacklisted",
-            "reraId", "firmName", "firmSize", "areaOfOperation", "kam", "added", "lastModified"
-        ]
-
-        # Dynamically capture other fields (excluding already included ones)
-        additional_fields = [field for field in all_fields if field not in primary_fields]
-
-        # Final column order (Primary fields first, then additional fields)
-        final_columns = primary_fields + additional_fields
-
-        # Prepare the data in the correct order
-        formatted_data = []
-        for item in data:
-            formatted_data.append([item.get(field, "") for field in final_columns])
-
-        # Combine headers and data for batch writing
-        data_to_write = [final_columns] + formatted_data
-
-        # Fix the DeprecationWarning by using named arguments
+        
+        headers = list(all_fields)
+        formatted_data = [[item.get(field, "") for field in headers] for item in data]
+        
         sheet.clear()
-        print(f"✅ Sheet '{sheet_name}' cleared successfully.")
-        sheet.update(range_name="A1", values=data_to_write)  # Using named arguments to fix DeprecationWarning
-        print(f"✅ Data written successfully to Google Sheets in sheet '{sheet_name}'.")
-
+        sheet.update("A1", [headers] + formatted_data)
+        print(f"✅ Data written successfully to Google Sheets.")
     except Exception as e:
         print(f"❌ Error writing to Google Sheets: {e}")
 
-
-# Main function
 def main():
     try:
         initialize_firebase()
-        collection_name = "agents"  # Replace with your Firestore collection name
+        print("🔍 Firebase initialized, moving to Firestore fetch...")
+        
+        collection_name = "agents"
         data, all_fields = fetch_firestore_data(collection_name)
-
+        
+        print("🔍 Firestore fetch completed, checking data...")
+        
         if data:
-            spreadsheet_id = "17_9YH7wcHHlgMmBOp50AuYR0Kx0_7-DQMoO38RBI3vg"  # Replace with your Google Sheet ID
-            sheet_name = "Sheet1"  # Specify the sheet name where you want to write the data
+            spreadsheet_id = "17_9YH7wcHHlgMmBOp50AuYR0Kx0_7-DQMoO38RBI3vg"# Keep hardcoded if needed
+            sheet_name = "Sheet2"
+            print(f"🔍 Writing {len(data)} records to Google Sheets...")
             write_to_google_sheet(data, spreadsheet_id, sheet_name, all_fields)
         else:
             print("⚠️ No data to write to Google Sheets.")
     except Exception as e:
         print(f"❌ An error occurred: {e}")
-
 
 if __name__ == "__main__":
     main()
