@@ -63,7 +63,6 @@ def fetch_firestore_data(collection_name):
         print(f"🔍 Fetching data from Firestore collection: {collection_name}...")
 
         rows = []
-        all_fields = set()
         docs = collection_ref.stream()  # Efficient streaming
 
         for doc in docs:
@@ -76,18 +75,17 @@ def fetch_firestore_data(collection_name):
                 item["added"] = convert_unix_to_date(item.get("added"))
                 item["lastModified"] = convert_unix_to_date(item.get("lastModified"))
                 item = {k: flatten_field(v) for k, v in item.items()}
-                all_fields.update(item.keys())
                 rows.append(item)
             except Exception as doc_error:
                 print(f"⚠️ Error processing document {doc.id}: {doc_error}")
 
         print(f"✅ Successfully fetched {len(rows)} records from Firestore.")
-        return rows, list(all_fields)  # Keeping order as per Firestore structure
+        return rows
     except Exception as e:
         print(f"❌ Error fetching data from Firestore: {e}")
-        return [], []
+        return []
 
-def write_to_google_sheet(data, spreadsheet_id, sheet_name, all_fields):
+def write_to_google_sheet(data, spreadsheet_id, sheet_name):
     try:
         if not data:
             print("⚠️ No data to write to Google Sheets.")
@@ -114,18 +112,23 @@ def write_to_google_sheet(data, spreadsheet_id, sheet_name, all_fields):
             print(f"✅ New sheet '{sheet_name}' created.")
 
         print(f"✅ Google Sheet '{sheet_name}' opened successfully.")
-        
-        # Ensure "phonenumber" is the first column, "cpId" is the second, and preserve the rest of the fields in original Firestore order
-        predefined_order = ["phonenumber", "cpId"]
-        remaining_fields = [field for field in all_fields if field not in predefined_order]
-        headers = predefined_order + remaining_fields
 
-        # Arrange data to match the headers order
-        formatted_data = [[item.get(field, "") for field in headers] for item in data]
+        # **Define the Fixed Column Order**
+        fixed_columns = [
+            "phonenumber", "cpId", "name", "extraDetails", "verified", "businessName",
+            "myInventories", "areaOfOperation", "firmSize", "firmName", "lastModified",
+            "notes", "blacklisted", "gstNo", "dailyCredits", "added", "admin", "kam",
+            "reraId", "monthlyCredits"
+        ]
 
+        # Ensure all data rows follow the fixed column order
+        formatted_data = [[item.get(field, "") for field in fixed_columns] for item in data]
+
+        # Write headers and formatted data to Google Sheets
         sheet.clear()
-        sheet.update("A1", [headers] + formatted_data)
-        print(f"✅ Data written successfully to Google Sheets with 'phonenumber' as the first column and 'cpId' as the second column.")
+        sheet.update("A1", [fixed_columns] + formatted_data)
+        
+        print(f"✅ Data written successfully with a fixed column order.")
     except Exception as e:
         print(f"❌ Error writing to Google Sheets: {e}")
 
@@ -135,7 +138,7 @@ def main():
         print("🔍 Firebase initialized, moving to Firestore fetch...")
         
         collection_name = "agents"
-        data, all_fields = fetch_firestore_data(collection_name)
+        data = fetch_firestore_data(collection_name)
         
         print("🔍 Firestore fetch completed, checking data...")
         
@@ -143,7 +146,7 @@ def main():
             spreadsheet_id = "17_9YH7wcHHlgMmBOp50AuYR0Kx0_7-DQMoO38RBI3vg"  # Keep hardcoded if needed
             sheet_name = "Sheet1"
             print(f"🔍 Writing {len(data)} records to Google Sheets...")
-            write_to_google_sheet(data, spreadsheet_id, sheet_name, all_fields)
+            write_to_google_sheet(data, spreadsheet_id, sheet_name)
         else:
             print("⚠️ No data to write to Google Sheets.")
     except Exception as e:
