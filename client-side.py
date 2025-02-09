@@ -55,7 +55,7 @@ def run_script(script_name):
 
 st.markdown(
     """
-    <h1 style='text-align: center; color: #4CAF50;'>🚀 ACN Script Execution Dashboard</h1>
+    <h1 style='text-align: center; color: #4CAF50;'>ACN Script Runner Dashboard</h1>
     <p style='text-align: center; font-size: 18px;'>Click a button to run a script and view the output.</p>
     <p style='text-align: center; font-size: 18px; font-weight: bold; color: red;'>⚠️ Avoid unnecessary execution—API limits may cause a shutdown.</p>
     """,
@@ -96,4 +96,4 @@ st.text_area(
 )
 
 st.markdown("---")
-st.success("✅ Ensure scripts are valid and have necessary permissions.")
+# st.success("✅ Ensure scripts are valid and have necessary permissions.")
