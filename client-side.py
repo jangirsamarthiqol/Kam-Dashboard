@@ -17,9 +17,8 @@ PYTHON_EXECUTABLE = sys.executable
 st.set_page_config(page_title="ACN Script Runner", layout="wide")
 
 # =================== FUNCTION: Run External Scripts ===================
-@st.cache_data(show_spinner=False)
 def run_script(script_name):
-    """Runs a Python script asynchronously and caches results to optimize speed."""
+    """Runs a Python script asynchronously and returns the output."""
     script_path = os.path.join(os.getcwd(), script_name)
 
     if not os.path.exists(script_path):
