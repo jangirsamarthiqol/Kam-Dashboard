@@ -3,6 +3,8 @@ import subprocess
 import sys
 import os
 import time
+import datetime
+import threading
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -14,29 +16,27 @@ PYTHON_EXECUTABLE = sys.executable
 # Streamlit page configuration
 st.set_page_config(page_title="ACN Script Runner", layout="wide")
 
-# Function to execute external Python scripts
+# =================== FUNCTION: Run External Scripts ===================
+@st.cache_data(show_spinner=False)
 def run_script(script_name):
-    """Runs a Python script and returns the output."""
-    script_path = os.path.join(os.getcwd(), script_name)  # Ensure correct path
+    """Runs a Python script asynchronously and caches results to optimize speed."""
+    script_path = os.path.join(os.getcwd(), script_name)
 
     if not os.path.exists(script_path):
         return f"❌ Error: Script `{script_name}` not found! Path: `{script_path}`"
 
-    st.markdown(f"🔹 **Executing:** `{script_name}` ⏳")
-    start_time = time.time()  # Start time tracking
+    start_time = time.time()
 
     try:
         result = subprocess.run(
             [PYTHON_EXECUTABLE, script_path],
             capture_output=True,
             text=True,
-            encoding="utf-8",  # <--- Force UTF-8 Encoding
-            env={**os.environ, "PYTHONUTF8": "1"}  # <--- Ensure UTF-8 in subprocess
+            encoding="utf-8",
+            env={**os.environ, "PYTHONUTF8": "1"}
         )
 
-
-        execution_time = round(time.time() - start_time, 2)  # Calculate execution time
-
+        execution_time = round(time.time() - start_time, 2)
         stdout = result.stdout.strip() if result.stdout else "⚠️ No standard output received."
         stderr = result.stderr.strip() if result.stderr else ""
 
@@ -50,9 +50,7 @@ def run_script(script_name):
     except Exception as e:
         return f"❌ Unexpected Error: `{script_name}` failed.\n\n```\n{str(e)}\n```"
 
-# Debug: Show the Python version being used
-# st.markdown(f"### 🐍 Using Python: `{PYTHON_EXECUTABLE}`")
-
+# =================== UI HEADER ===================
 st.markdown(
     """
     <h1 style='text-align: center; color: #4CAF50;'>ACN Script Runner Dashboard</h1>
@@ -62,18 +60,18 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Initialize session state for output
+# =================== SESSION STATE INITIALIZATION ===================
 if "output" not in st.session_state:
     st.session_state.output = ""
 
-# Define scripts to run
+# =================== SCRIPTS LIST ===================
 scripts = {
     "Agents Data": "agents-from-firebase.py",
     "Inventories Data": "inventories-from-firebase.py",
     "Enquiries Data": "enquires-from-firebase.py"
 }
 
-# UI for script execution
+# =================== SCRIPT EXECUTION UI ===================
 st.markdown("## 🔹 Available Scripts")
 cols = st.columns(len(scripts))
 
@@ -81,9 +79,10 @@ for col, (label, script) in zip(cols, scripts.items()):
     with col:
         st.markdown(f"### {label}")
         if st.button(f"▶ Run {label}", use_container_width=True):
-            st.session_state.output = run_script(script)
+            with st.spinner(f"Running {label}..."):
+                st.session_state.output = run_script(script)
 
-# Display output log
+# =================== EXECUTION OUTPUT UI ===================
 st.markdown("## 📜 Execution Log")
 st.markdown("### ✅ **Results:**")
 
@@ -96,4 +95,18 @@ st.text_area(
 )
 
 st.markdown("---")
-# st.success("✅ Ensure scripts are valid and have necessary permissions.")
+
+# =================== KEEP-ALIVE MECHANISM ===================
+def keep_alive():
+    """Prevents server from going idle by updating a session state variable asynchronously."""
+    while True:
+        st.session_state["keep_alive_time"] = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        time.sleep(60)  # Prevents shutdown due to inactivity
+
+# Start keep-alive in a background thread
+keep_alive_thread = threading.Thread(target=keep_alive, daemon=True)
+keep_alive_thread.start()
+
+# Display keep-alive status without re-rendering every second
+if "keep_alive_time" in st.session_state:
+    st.markdown(f"🟢 **Keep-alive active** | Last updated: `{st.session_state.keep_alive_time}`")
