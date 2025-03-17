@@ -1,0 +1,14 @@
+Field,Data Type
+added,int
+area,int
+lastModified,int
+propertyName,str
+budget,dict
+marketValue,str
+agentCpid,str
+assetType,str
+status,str
+requirementId,str
+configuration,str
+requirementDetails,str
+id,str

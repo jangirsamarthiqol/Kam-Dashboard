@@ -67,7 +67,8 @@ if "output" not in st.session_state:
 scripts = {
     "Agents Data": "agents-from-firebase.py",
     "Inventories Data": "inventories-from-firebase.py",
-    "Enquiries Data": "enquires-from-firebase.py"
+    "Enquiries Data": "enquires-from-firebase.py",
+    "Update Firestore": "Dateupdate.py"  # Fourth button for the last code
 }
 
 # =================== SCRIPT EXECUTION UI ===================

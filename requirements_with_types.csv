@@ -1,0 +1,433 @@
+added,area,lastModified,propertyName,budget,marketValue,agentCpid,assetType,status,requirementId,configuration,requirementDetails,id,added (Type),area (Type),lastModified (Type),propertyName (Type),budget (Type),marketValue (Type),agentCpid (Type),assetType (Type),status (Type),requirementId (Type),configuration (Type),requirementDetails (Type),id (Type)
+1734080426,0,1734100226,test,"{'from': '', 'to': ''}",Market Value,INT002,apartment,Closed,RQA126,1 BHK,,2xBU3qd2jAbyxuaLiuHG,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732776048,0,1732795848,NCC urban Greens villa,"{'from': '', 'to': ''}",Market Value,INT001,villa,Pending,RQA078,3BHK,"NCC urban Greens villa, 3 BHK, 4 BHK, Villa 4cr",5D7ibrkK8GuB3drxofYb,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734162595,3000,1734182395,salarpuria sattva luxuria,"{'to': 5.5, 'from': 5}",,CPA363,apartment,Pending,RQA127,4 BHK,4 bhk,5rCB81rih6mltbYWYti0,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733460573,4000,1733480373,JAYANAGAR,"{'from': 1, 'to': 1.25}",,CPA584,bungalow,Pending,RQA109,3BHK,Required Independent  3/4bhk For RENT,6cvBr0y7yVfkDCux6nh4,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732778663,0,1732798463,Embassy Groove,"{'from': '', 'to': ''}",Market Value,INT001,duplex,Pending,RQA087,4BHK,"Duplex or triplex in Embassy Groove , Golf course facing as per market price",9ZNII6u1nrUemSy5lkOj,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732859355,0,1732879155,Prestige Misty Water,"{'from': '', 'to': ''}",Market Value,INT001,apartment,Pending,RQA093,2 BHK,"2 BHK , as per market",AsVawMNUj654K9C6sKbJ,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734921250,3000,1734941050,Addharsh Palm Springs ,"{'from': 4, 'to': 4.2}",,CPA638,apartment,Pending,RQA138,3.5 BHK,"- Budget is 4 Cr
+- Upto 3000 sqft
+-  Shouldn't be in the ground floor
+- 3 or 4 BHK with servant quarters",BgTHhTMwB7by3946EIJ3,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734248082,0,1734267882,Bangalore,"{'from': 0, 'to': 10}",,CPA500,apartment,Pending,RQA130,3 BHK,Any kind of property with only guidance value on paper. ,DlzKiLaZKJBlbXTij7Ms,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733198532,3000,1733218332,South Bangalore ,"{'from': '', 'to': ''}",Market Value,CPA409,apartment,Pending,RQA100,3 BHK,"Sobha morzaria grandeur 
+Mahindra windchimes 
+Prestige pinewood 
+Snn raj lake view",ELSxUsN09YkdObjZCYwo,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733897794,0,1733917594,Chaitniya samarpan,"{'from': '', 'to': ''}",Market Value,CPA609,villa,Pending,RQA123,4BHK,Villa,FJgqSefMyyPbMqUEeI3s,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733772884,0,1733792684,Whitefield ,"{'from': '', 'to': ''}",Market Value,CPA392,apartment,Pending,RQA119,3 BHK,3 bhk budget 2.5 cr,Go08SMhJVDc1gY9L2EWt,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733460573,0,1733480373,Birla Tisya ,"{'from': 2, 'to': 2.5}",,CPA584,apartment,Pending,RQA108,,Required 3bhk Immediate settlement ,H429lKTnMkhNfBgWCARx,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732858857,0,1732878657,Niko homes phase 2,"{'from': '', 'to': ''}",Market Value,INT002,apartment,Pending,RQA090,2 BHK,,LLVQInK5sgHZrdWVhA2L,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733874654,0,1733894454,Prestige shantiniketan ,"{'from': '', 'to': ''}",Market Value,CPA539,apartment,Pending,RQA120,4 BHK,"4BHK ,higher floor ",LcifoAUSnach0rMRE3Iy,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733751097,1369,1733770897,Birla TISYA,"{'from': 2.5, 'to': 2.7}",,CPA584,apartment,Pending,RQA118,3 BHK,Required 3bhk ,NMIfXqK9prb4E1D2zVbi,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734162595,600,1734182395,vaishnavi serein,"{'from': 4.5, 'to': 5}",,CPA363,apartment,Pending,RQA129,1 BHK,,OPc1h4X8u3kyfqRRsB5o,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733540986,1263,1733560786,Prestige Westwoods ,"{'to': 2.25, 'from': 1.7}",,CPA584,apartment,Pending,RQA112,2 BHK,Required urgently 2/2.5bhk Preferred East/West facing Immediate Settlement,OpSvV6w8DrTd3xW12ol1,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732864311,1300,1732884111,Jayanagar /Basavangudi/Jp nagar 4th phase,"{'from': 1.2, 'to': 1.4}",,CPA170,apartment,Pending,RQA095,,"Bhk -2 or 3 Bhk
+Facing - East or North 
+Age of building - less than 7 years 
+Budget - 1.4 cr
+Preferred hindu community.
+Immediate booking 
+Self funding",PqtWp0UTUhXVQI4bnhot,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734580079,0,1734599879,test,"{'from': '', 'to': ''}",Market Value,INT002,apartment,Closed,RQA134,3 BHK,,RQA134,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734659617,0,1734679417,Windmills,"{'from': '', 'to': ''}",Market Value,CPA570,apartment,Pending,RQA135,4 BHK,3/4 BHK,RQA135,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734762864,3000,1734782664,JPNAGAR near Delmia Circle,"{'from': 2.5, 'to': 3.5}",,CPA584,apartment,Pending,RQA136,,Required 3/4bhk Apartment for immediate purchase,RQA136,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734902746,1800,1734922546,Sobha Windsor,"{'from': '', 'to': ''}",Market Value,CPA011,apartment,Pending,RQA137,3 BHK,"3 BHK, 1800 plus sq.ft, above 10th floor, balcony facing should be east, preferred Wings are 3 & 4 mainly and Wings 7 & 8  also fine.
+Purchaser is into C component of 30%  total value.",RQA137,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734927491,3000,1734947291,Valmark Apas,"{'from': '', 'to': ''}",Market Value,CPA138,apartment,Pending,RQA139,3.5 BHK,3/4bhk on higher floors(atleast above 5th floor ),RQA139,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734931200,858,1734951000,Birla TISYA,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA141,2 BHK,Required 2bhk ,RQA141,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734931200,1263,1734951000,Prestige Westwoods,"{'from': 17000000, 'to': 19000000}",,CPA584,apartment,Pending,RQA142,2 BHK,Required 2bhk ,RQA142,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734931200,1357,1734951000,Prestige Westwoods,"{'from': 17500000, 'to': 22000000}",,CPA584,apartment,Pending,RQA143,2.5 BHK,Required 2.5bhk,RQA143,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734931464,1700,1734951264,Prestige Westwoods ,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA144,3 BHK,Required 3bhk,RQA144,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734931464,0,1734951264,Prestige Westwoods ,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA145,4 BHK,Required 4bhk,RQA145,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734931464,2200,1734951264,JPNAGAR Near Delmia circle,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA146,3 BHK,Required 3bhk ,RQA146,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735097072,3000,1735116872,Jayanagar,"{'from': 1, 'to': 1.5}",,CPA584,bungalow,Pending,RQA147,4BHK,Required urgently 3/4bhk Independent House / Bunglow for RENT ,RQA147,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735155299,0,1735175099,Whtefield,"{'from': 5, 'to': 5.5}",,CPA094,villa,Pending,RQA148,4BHK,4bhk Villa in 5 Cr budget around Whitefield area in a budget of 5CR,RQA148,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735155299,0,1735175099,HSR Layout or Koramangala,"{'from': 8, 'to': 9}",,CPA094,independent building,Pending,RQA149,Commercial Building,Plot or rental yielding property ,RQA149,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735259879,0,1735279679,Manyatha Song of the Earth,"{'from': '', 'to': ''}",Market Value,CPA071,plot,Pending,RQA150,,60 x 40 plot required for purchase in Manyatha Song of the Earth,RQA150,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735259879,0,1735279679,Manyata Earth Song,"{'from': '', 'to': ''}",Market Value,CPA071,plot,Pending,RQA151,,"Required plot for purchase at Manyata Earth Song, 1800 - 2400 sfr",RQA151,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735523268,1387,1735543068,prestige city,"{'from': 1.5, 'to': 1.6}",,CPA239,apartment,Pending,RQA152,3 BHK,3 bhk/1387 sq feet,RQA152,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735733481,1200,1735753281,Arvind Greatlands ,"{'from': '', 'to': ''}",Market Value,CPA664,plot,Pending,RQA153,,ARVIND Greatlands Phase 1,RQA153,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735733481,1067,1735753281,Purva Tivoli Hills,"{'from': 0.76, 'to': 0.81}",,CPA664,plot,Pending,RQA154,,Purva Tivoli Hills,RQA154,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735896133,3000,1735915933,Phoenix Bangalore One West,"{'from': '', 'to': ''}",Market Value,CPA071,apartment,Pending,RQA155,4 BHK,"Purchase of a large 3/4 bhk at Phoenix Bangalore One West
+",RQA155,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735952625,1800,1735972425,Prestige Woodland Park,"{'from': '', 'to': ''}",Market Value,CPA411,apartment,Pending,RQA156,3 BHK,Looking for 2 or 3 or 4 BHK flats in Prestige Woodland Park project as per market price,RQA156,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735976091,0,1735995891,Budigere cross ,"{'from': 0, 'to': 10000000}",,CPA662,plot,Pending,RQA157,,,RQA157,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736108988,0,1736128788,Mantri Elite ,"{'from': '', 'to': ''}",Market Value,CPA580,apartment,Pending,RQA158,3 BHK,3bhk for purchase required,RQA158,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736132389,1200,1736152189,Adarsh Savana,"{'from': '', 'to': ''}",Market Value,CPA071,plot,Pending,RQA159,,30x40 site for purchase in Adarsh Savana. East facing required,RQA159,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736140385,3000,1736160185,Jayanagar / JP Nagar,"{'from': '', 'to': ''}",Market Value,CPA071,bungalow,Pending,RQA160,,Require a Independent Bunglow for rent in Jayanagar or JP Nagar for pay school. Min plot area of the bunglow should be 3000 sft. Budget upto 3.5 lakhs/month ,RQA160,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736149633,0,1736169433,North Bangalore,"{'from': 10, 'to': 15}",,CPA643,plot,Pending,RQA161,,"*Urgent Requirement* : Urgently required *Land* for purchase in *North Bengalore* upto 10 - 15 acres. Kindly Call me on 9900097684.
+
+Estate Point",RQA161,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736213138,3000,1736232938,HSR layout ,"{'from': '', 'to': ''}",Market Value,CPA595,independent building,Pending,RQA162,3.5BHK,Looking for individual house 3 or 4bhk,RQA162,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736290446,1080,1736310246,Provident Sunworth City,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA163,3 BHK,Required 3bhk,RQA163,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736458591,1600,1736478391,Mantri webcity,"{'from': '', 'to': ''}",Market Value,CPA688,apartment,Pending,RQA164,,3 bhk except south facing ,RQA164,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736483757,2400,1736503557,Sanjaynagar,"{'from': '', 'to': ''}",Market Value,CPA700,plot,Pending,RQA165,,"60/40 plot sanjaynagar,rmv as per market price commission side by side. ",RQA165,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736489127,1163,1736508927,Prestige Great Acres,"{'from': '', 'to': ''}",Market Value,CPA643,plot,Pending,RQA166,,Required 1163 sft plot in PGA. Budget: 14k. Immediate settlement,RQA166,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736489189,2000,1736508989,Marathalli,"{'from': 2.3, 'to': 2.5}",,CPA705,apartment,Pending,RQA167,,2000 sqft North East 1st to 4th floor,RQA167,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736500066,0,1736519866,Goyal Piccadilly ,"{'from': 1.15, 'to': 1.2}",,CPA688,apartment,Pending,RQA168,,2 bhk flat in higher floors,RQA168,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736549833,5000,1736569633,Commercial ,"{'from': '', 'to': ''}",Market Value,CPA679,commercial building,Pending,RQA169,Commercial Building,"Preleased Commercial units, od reatial  budget 5 cr to 15 cr",RQA169,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736729780,3000,1736749580,Adarsh PREMIA ,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA170,4 BHK,4bedroom,RQA170,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736729780,2891,1736749580,Prestige SouthRidge ,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA171,3 BHK,3bedroom for RENT,RQA171,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736803141,0,1736822941,Brigade Northridge,"{'from': '', 'to': ''}",Market Value,CPA028,apartment,Pending,RQA172,2 BHK,2/3 Bhk,RQA172,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736803141,0,1736822941,Brigade Northridge,"{'from': '', 'to': ''}",Market Value,CPA028,apartment,Pending,RQA173,3 BHK,3Bhk,RQA173,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736849124,1500,1736868924,1500 sq.ft plot in North Bangalore.,"{'from': 0.8, 'to': 0.9}",,CPA628,plot,Pending,RQA174,,Client is looking for a East facing plot in North Bangalore carrying a budget of 90 lakhs to Register immediately and start constructing his home.,RQA174,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736752134,0,1736771934,Sobha Dream Acres,"{'from': '', 'to': ''}",Market Value,CPA570,apartment,Pending,RQA175,2 BHK,,RQA175,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736924721,2400,1736944521,Embassy springs ,"{'from': '', 'to': ''}",Market Value,CPA688,plot,Pending,RQA176,,2400 to 3000 ,RQA176,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736924721,1200,1736944521,Nirvana orchid,"{'from': '', 'to': ''}",Market Value,CPA688,plot,Pending,RQA177,,Plot 1200 ,RQA177,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736935749,1500,1736955549,Kormangala,"{'from': '', 'to': ''}",Market Value,CPA713,apartment,Pending,RQA178,3 BHK,Flat in Kormangala area,RQA178,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737007241,0,1737027041,Esteem Misty Hills ,"{'from': '', 'to': ''}",Market Value,CPA071,plot,Pending,RQA179,,30 x 40 plot in Esteem Misty Hills,RQA179,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737012558,744,1737032358,Vaswani Menlo Park,"{'from': '', 'to': ''}",Market Value,CPA023,apartment,Pending,RQA180,1 BHK,Want to sell,RQA180,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737012558,1635,1737032358,vaswani menlo park,"{'from': '', 'to': ''}",Market Value,CPA023,apartment,Pending,RQA181,3 BHK,want to sell,RQA181,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737165500,3500,1737185300,Pramuk M M Meridian ,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA182,4 BHK,4bhk ,RQA182,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737165500,1300,1737185300,Suguna Pristine Square,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA183,2 BHK,2bhk,RQA183,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737165500,1600,1737185300,Suguna Pristine Square,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA184,3 BHK,3bhk ,RQA184,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737167074,0,1737186874,Total Environment Pursuit of Radical Environment ,"{'from': '', 'to': ''}",Market Value,CPA563,apartment,Pending,RQA185,4 BHK,4bhk L45,RQA185,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737176510,2027,1737196310,Prestige Waterford,"{'from': 3.4, 'to': 3.6}",,CPA752,apartment,Pending,RQA186,3.5 BHK,3.5 BHK in Higher Floor,RQA186,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737194447,3000,1737214247,North Bengaluru,"{'from': 5, 'to': 8}",,CPA752,apartment,Pending,RQA187,4 BHK,3000 Sqft apartment,RQA187,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737199497,3000,1737219297,Vaishnavi Terrace,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA188,3 BHK,3bhk,RQA188,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737199497,3500,1737219297,Vaishnavi Terrace,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA189,4 BHK,4bhk,RQA189,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737199497,3000,1737219297,Total Environment Learning To Fly,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA190,3 BHK,3bhk,RQA190,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737199497,3000,1737219297,Maratt Pimento,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA191,3 BHK,3bhk,RQA191,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737268221,1500,1737288021,Godrej Eternity,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA192,3 BHK,3bedroom,RQA192,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737268221,1700,1737288021,Purva Highland,"{'from': '', 'to': ''}",Market Value,CPA584,apartment,Pending,RQA193,3 BHK,3bedroom,RQA193,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737347218,1800,1737367018,Assetz 63 degree,"{'from': '', 'to': ''}",Market Value,CPA239,apartment,Pending,RQA194,3 BHK,1600 to 1800 sq feet SBA/2 balcony with utility/ East facing/ vastu complaint,RQA194,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737431618,3500,1737451418,hennur road,"{'from': '', 'to': ''}",Market Value,CPA760,penthouse,Pending,RQA195,4BHK,we are looking for pent house in hennur bagalur road,RQA195,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737459638,2400,1737479438,JP Nagar 9th Phase,"{'from': 39600000, 'to': 39600000}",,CPA163,plot,Closed,RQA196,,"40 x60 South Facing ,BDA Plot for sale in JP Nagar 9th phase imm sale...",RQA196,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738123269,2400,1738143069,"HSR, Sarjapur, Koramangala","{'from': '', 'to': ''}",Market Value,CPA825,duplex,Pending,RQA197,4BHK,4bhk duplex /apartment or 3bhk ready to move in or within a year handover ,RQA197,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738123269,1200,1738143069,DLF WESTEND HEIGHTS ,"{'from': 1, 'to': 1.4}",,CPA825,apartment,Pending,RQA198,2 BHK,2BHK OR 3BHK-2T ,RQA198,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738195358,1700,1738215158,Around Koramangala ,"{'from': 2.5, 'to': 2.7}",,CPA838,apartment,Pending,RQA199,3 BHK,3BHK| 1700 sqft| Budget- 2.7cr (slightly flexible),RQA199,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738206999,1500,1738226799,sobha royal chrest 3 bhk,"{'from': '', 'to': ''}",Market Value,CPA363,apartment,Pending,RQA202,3 BHK,"3bhk 3T, east / north/  after 5th floor. ",RQA202,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738301668,2000,1738321468,3bhk/4bhk - Bellary Rd to Hosa Rd,"{'from': '', 'to': ''}",Market Value,CPA058,apartment,Pending,RQA205,3 BHK,"Client looking for 3bhk or Bigger unit around 2000sqft size, Particularly Lake facing Balcony Unit, Middle floors, Locations are Jakkur Hebbal Yelahanka Whitefield Varthur Gunjur Sarjapur Hosa Rd , RTMI / Resale / Within 6months posession",RQA205,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738462183,12075,1738481983,Falcon City,"{'from': '', 'to': ''}",Market Value,CPA422,apartment,Pending,RQA207,2 BHK,2 or 3 BHK ,RQA207,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738551055,3000,1738570855,Bangalore North,"{'from': 0, 'to': 4}",,CPA662,apartment,Pending,RQA208,4 BHK,Apartment/ Villa with 4BHK + Servant Quarter from a Grade A builder in Bangalore North,RQA208,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738559251,1800,1738579051,"  In Brigade metropolis, Brigade lakefront, Durga petals ","{'from': '', 'to': ''}",Market Value,CPA870,apartment,Pending,RQA209,3 BHK,"Wanted 
+2-3 BHK semi furnished flat 
+In Brigade metropolis, Brigade lakefront, Durga petals 
+Modern  apartment   
+Highter floor  
+ Budget -  2 Cr
+Contact  with direct inventory 
+  Abhishek
+8105213550
+Golden Nest Realtors",RQA209,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738641602,2700,1738661402,Ferns Meadows Kothanur ,"{'from': 4, 'to': 5}",,CPA842,villament,Pending,RQA210,4BHK,Villa 4BHK 2700sft 4.5Cr Ferns Meadows in Kothanur,RQA210,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738638112,0,1738657912,Unitech Heritage Estate Yelahanka ,"{'from': 2.5, 'to': 3}",,CPA842,apartment,Closed,RQA211,4 BHK,4BHK Apartment in Unitech Heritage Estate,RQA211,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738641923,0,1738661723,Unitech Heritage Estate Yelahanka,"{'from': 1.3, 'to': 1.5}",,CPA842,apartment,Pending,RQA212,3 BHK,3BHK Unitech Heritage Estate Yelahanka,RQA212,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738641602,2400,1738661402,Asha Township ,"{'from': 4, 'to': 5}",,CPA842,villament,Pending,RQA213,4BHK,4BHK Villa 60*40 2000Sqft 3Cr Asha Township,RQA213,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738642466,0,1738662266,Mantri Webcity ,"{'from': 1.2, 'to': 1.5}",,CPA842,apartment,Pending,RQA214,3 BHK,3 BHK in Mantri Webcity,RQA214,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738992629,2500,1739012429,Devanhalli ,"{'from': '', 'to': ''}",Market Value,CPA842,villa,Pending,RQA215,3BHK,"Villa North Bangalore Near Airport road 
+North or East facing
+Good amenities with on bigger project area ",RQA215,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738998424,7000,1739018224,"Hennur main rd , Thanisandra , Kothanur, K Naraynapura, Horamavu , Kalkere","{'from': 5, 'to': 7}",,CPA842,villa,Pending,RQA216,4BHK,"Client Requirements: 4 BHK – 5 BHK Villa (6500 - 8456 Sq.Ft.) | Budget: ₹5 Cr – ₹7 Cr
+
+We are seeking a luxurious villa within a well-established, family-friendly community. The ideal property will be between 6500 to 8456 square feet, featuring 4 or 5 spacious bedrooms, catering to a family with children. The budget for this purchase is between ₹5 Crore and ₹7 Crore.
+
+Key Requirements:
+
+Facing Preference: The villa should ideally be East or North-facing to ensure optimal natural light and ventilation throughout the day.
+
+Family-Oriented Amenities: Given that the client has young children, a property with ample open spaces and child-friendly amenities is essential. The ideal property should feature:
+
+Safe, secure play areas and parks for children
+Dedicated walking and jogging tracks
+Sports facilities (e.g., swimming pool, tennis courts, etc.)
+Green, open spaces for outdoor activities
+Connectivity: The location of the villa must be easily accessible, with major connectivity to key roads and locations such as schools, hospitals, shopping centers, and entertainment hubs. Proximity to main roads and public transport routes is a must for ease of daily commuting.
+
+Spacious Living: The home should be designed to offer plenty of space for a growing family, with large, open-plan living areas and well-sized rooms, particularly for the bedrooms, living, and dining areas.
+
+Security and Privacy: As the client is focused on their family's safety and well-being, 24/7 security within a gated community is a key priority.
+
+Luxury and Exclusivity: The villa should reflect a sense of exclusivity, offering high-end finishes, a modern design, and premium features like a well-equipped kitchen, spacious bathrooms, and high-quality fittings.",RQA216,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739154814,1200,1739174614,Whitfield ,"{'from': 3, 'to': 4}",,CPA705,plot,Pending,RQA217,,,RQA217,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739153177,2000,1739172977," RMZ Galleria , Yelehanka","{'from': '', 'to': ''}",Market Value,CPA842,apartment,Pending,RQA218,3 BHK,"3BHK 1910Sqft  (east, north, west)",RQA218,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739153177,1800,1739172977,Purva Venezia ,"{'from': '', 'to': ''}",Market Value,CPA842,apartment,Pending,RQA219,3 BHK,"3 BHK 1780 Sq. Ft(west, east, north)",RQA219,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739153177,1500,1739172977,Nagarjuna Meadows,"{'from': '', 'to': ''}",Market Value,CPA842,apartment,Pending,RQA220,3 BHK,3BHK (East West North),RQA220,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739153177,2500,1739172977, Shobha Victoria Park,"{'from': '', 'to': ''}",Market Value,CPA842,villa,Pending,RQA221,3.5BHK,"3.5 BHK 2547 Sq. Ft (East, West, North)",RQA221,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739153177,1962,1739172977, Vista Spaces Vasishta,"{'from': '', 'to': ''}",Market Value,CPA842,apartment,Pending,RQA222,3 BHK,"3 BHK 1962 Sq. Ft. (East, West, North)",RQA222,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739153177,1500,1739172977,Adarsh Savanna,"{'from': '', 'to': ''}",Market Value,CPA842,plot,Pending,RQA223,,"1200 sft or 1500 sft, East or North ",RQA223,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739153177,4500,1739172977,Asha township,"{'from': '', 'to': ''}",Market Value,CPA842,villa,Pending,RQA224,4BHK," 4BHK Villa 60*40  (plot)  Asha Township  east or north facing, Vaastu complaint",RQA224,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739153177,1750,1739172977,Brigade Orchards Juniper,"{'from': '', 'to': ''}",Market Value,CPA842,apartment,Pending,RQA225,3 BHK,"3 BHK  (East, west, north facing)",RQA225,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738906778,1841,1738926578,Purva Highland,"{'from': 1.2, 'to': 1.3}",,CPA695,apartment,Pending,RQA226,3 BHK,3 BHK,RQA226,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739239909,2000,1739259709,Devanahalli North Bangalore,"{'from': '', 'to': ''}",Market Value,CPA842,villa,Pending,RQA227,3BHK,"Villa North Bangalore Near Airport   
+North or East facing
+Good amenities with on bigger project area",RQA227,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739239909,3500,1739259709,horamavu,"{'from': '', 'to': ''}",Market Value,CPA842,villa,Pending,RQA228,3BHK,3BHK + Study room Villa ( East West north),RQA228,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739241338,3500,1739261138,LG Lake view Dew,"{'from': '', 'to': ''}",Market Value,CPA842,villa,Pending,RQA229,4BHK,"4bhk villa (north, east, west, facing)",RQA229,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739241864,1700,1739261664,Presitige royal Garden,"{'from': 1, 'to': 1.5}",,CPA842,villa,Pending,RQA230,3BHK,"3 BHK + Study room , Extra room (East West North)",RQA230,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739242042,1700,1739261842,chowriappa constellation,"{'from': '', 'to': ''}",Market Value,CPA842,apartment,Pending,RQA231,3 BHK,3BHK (North East West) facing,RQA231,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739242042,2700,1739261842,Nagavara,"{'from': 1, 'to': 1.5}",,CPA842,apartment,Pending,RQA232,4 BHK,4 BHK ( East Wet North),RQA232,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739173131,0,1739192931,DNR arista,"{'from': '', 'to': ''}",Market Value,CPA678,apartment,Pending,RQA233,2 BHK,2bhk in phase 2 or 1,RQA233,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739365762,0,1739365762,"Hennur , kr puram , banaswadi, hbr, cv raman nagar ,marathalli","{'from': '', 'to': ''}",Market Value,CPA953,apartment,Pending,RQA234,2.5 BHK,"Ready to move or close to move in 2 or 3 bhk needed low rise structure,  less amenities also fine ..clear paperwork mandatory ",RQA234,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733164200,0,0,renaissance park,"{'from': '', 'to': ''}",Market Value,CPA503,,Pending,RQB001,2 bhk,,RQB001,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733164200,0,0,Shakar Nagar,"{'from': '2', 'to': '2'}",,CPA496,indipendent building,Pending,RQB002,3 bhk,,RQB002,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733164200,0,0,Prestige ivy terrace,"{'from': '2.5', 'to': '2.8'}",,CPA105,Apartment,Pending,RQB003,3 bhk,,RQB003,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733164200,0,0,prestige jate pavalion,"{'from': '2.5', 'to': '2.8'}",,CPA105,Apartment,Pending,RQB004,3 bhk,,RQB004,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733164200,0,0,Assetz east point,"{'from': '2.5', 'to': '2.8'}",,CPA105,Apartment,Pending,RQB005,3 bhk,,RQB005,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733250600,0,0,Shriram Southern Crest,"{'from': '', 'to': ''}",Market Value,CPA100,Apartment,Pending,RQB006,4 BHK,,RQB006,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733250600,0,0,Prestige Falcon City,"{'from': '', 'to': ''}",Market Value,CPA100,Apartment,Pending,RQB007,4 BHK,,RQB007,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733250600,0,0,Adarsh Stratus,"{'from': '', 'to': ''}",Market Value,CPA438,Apartment,Pending,RQB008,3 BHK,,RQB008,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733250600,0,0,Total Environment: learning to Fly,"{'from': '', 'to': ''}",Market Value,CPA438,Apartment,Pending,RQB009,3 BHK,,RQB009,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733250600,0,0,DNR Reflection,"{'from': '', 'to': ''}",Market Value,CPA438,Apartment,Pending,RQB010,3 BHK,,RQB010,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733250600,0,0,Brigade Exotica,"{'from': '4', 'to': '4'}",,CPA481,Apartment,Pending,RQB011,3 BHK,,RQB011,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733250600,1500,0,Prestige City,"{'from': '1.8', 'to': '1.8'}",,CPA502,Apartment,Pending,RQB012,3 BHK,10-20 Floor,RQB012,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733250600,0,0,Independent House in Sahakar Nagar,"{'from': '2', 'to': '2'}",,CPA496,Independent Building,Pending,RQB013,,,RQB013,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733250600,0,0,Prestige Misty Water,"{'from': '1.4', 'to': '1.5'}",,CPA413,Apartment,Pending,RQB014,2 BHK,,RQB014,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733337000,0,0,Raheja Viveria,"{'from': '', 'to': ''}",Market Value,CPA082,Apartment,Pending,RQB019,1 BHK,either phase 1 or 2,RQB019,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733337000,0,0,Shriram Southern Cres,"{'from': '', 'to': ''}",Market Value,CPA100,Apartment,Pending,RQB020,4 BHK,,RQB020,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733337000,0,0,Prestige Falcon City,"{'from': '', 'to': ''}",Market Value,CPA100,Apartment,Pending,RQB021,4 BHk,,RQB021,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733337000,0,0,Prestige Misty water,"{'from': '1.4', 'to': '1.5'}",,CPA413,Apartment,Pending,RQB022,2 BHK,,RQB022,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733337000,0,0,Brigade lakefront ,"{'from': '2.5', 'to': '2.5'}",,CPA002,Apartment,Pending,RQB023,3 BHK,,RQB023,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733337000,1500,0,Brigade laguna,"{'from': '2', 'to': '2'}",,CPA113,Apartment,Pending,RQB024,3 BHK,Brigade laguna 3bhk 1500-1600 sqft  2cr,RQB024,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733337000,0,0,Adarsh crest  ,"{'from': '2', 'to': '2'}",,CPA113,Apartment,Pending,RQB025,,Higher Floors,RQB025,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733337000,0,0,Sobha victoria park row house,"{'from': '', 'to': ''}",Market Value,CPA113,Row House,Pending,RQB026,,Sobha victoria park row house requirements,RQB026,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733337000,0,0,Raheja viveria,"{'from': '', 'to': ''}",Market Value,CPA082,Apartment,Pending,RQB027,1 BHK,client is looking for 1 bhk in Raheja viveria....either in phase 1 or 2 will do...,RQB027,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733337000,0,0,Pretige Green Gable,"{'from': '', 'to': ''}",Market Value,CPA622,Apartment,Pending,RQB029,3 BHK,,RQB029,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733337000,0,0,Soul Space Arista,"{'from': '', 'to': ''}",Market Value,CPA622,Apartment,Pending,RQB030,3 BHK,,RQB030,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733509800,0,0,koramangaa,"{'from': '', 'to': ''}",Market Value,CPA055,demolised buiding,Pending,RQB031,,"7000 -10000 sqft, 25ft road",RQB031,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733509800,0,0,CV Raman area,"{'from': '2.5', 'to': '2.5'}",,CPA415,Apartment,Pending,RQB032,3 BHK,,RQB032,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733596200,0,0,Bannerghatta rd,"{'from': '1.4', 'to': '1.4'}",,CPA274,Apartment,Pending,RQB033,3 BHK,,RQB033,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733596200,0,0,JP Nagar,"{'from': '1.5', 'to': '1.5'}",,CPA274,Apartment,Pending,RQB034,3 BHK,,RQB034,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733596200,0,0,Akshay Nagar,"{'from': '1.5', 'to': '1.5'}",,CPA274,Apartment,Pending,RQB035,3 BHK,,RQB035,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,0,0,Sobha Emerald,"{'from': '2.5', 'to': '2.5'}",,CPA506,villa,Pending,RQB036,3 BHK,,RQB036,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,0,0,Sobha Emerald,"{'from': '2.3', 'to': '2.3'}",,CPA496,villa,Pending,RQB037,3 BHk,Phase 1 in Jakkur,RQB037,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,0,0,JP Nagar,"{'from': '2.5', 'to': '2.6'}",,CPA103,Independent Building,Pending,RQB038,3 BHk,"3 bhk for owner stay should be there
+And rest individual floors - for rental income
+",RQB038,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,0,0,Madiwala,"{'from': '2.5', 'to': '2.6'}",,CPA103,Independent Building,Pending,RQB039,,"3 bhk for owner stay should be there
+And rest individual floors - for rental income
+",RQB039,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,0,0,Bommanalli,"{'from': '2.5', 'to': '2.6'}",,CPA103,Independent Building,Pending,RQB040,,"3 bhk for owner stay should be there
+And rest individual floors - for rental income
+",RQB040,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,0,0,JP Nagar,"{'from': '', 'to': ''}",Market Value,CPA103,Commercial site,Pending,RQB041,,"5th phase or 6th phase
+   Near to bar and restaurants lane
+Upto 40k/sq.ft also fine",RQB041,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,0,0,Sobha Royal Pavillion,"{'from': '', 'to': ''}",Market Value,CPA274,Apartment,Pending,RQB042,4 BHK,4 BHK Inside Facing,RQB042,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,0,0,Century Breez,"{'from': '1.65', 'to': '1.65'}",,CPA113,Apartment,Pending,RQB043,3 BHK,Century breeze airport Road 3bhk 1.65 cr,RQB043,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,0,0,Assetz Canvas & Cove,"{'from': '', 'to': ''}",Market Value,CPA577,Apartment,Pending,RQB044,3 BHK,3bhk. 1000-1100 Carpet area required. No ground floor. Please let me know,RQB044,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,0,0,Prestige Song of South,"{'from': '', 'to': ''}",Market Value,CPA577,Apartment,Pending,RQB045,3 BHK,3bhk. 1000-1100 Carpet area required. No ground floor. Please let me know,RQB045,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,0,0,Malleshwaram,"{'from': '1.8', 'to': '1.8'}",,CPA071,Apartment,Pending,RQB046,3 BHK,"3 bhk apartment in Malleshwaram Old apartments are fine, should have a lift. Facing - except south any facing Budget - max 1.8 cr",RQB046,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,2400,0,Brigade Neem Groove,"{'from': '1.8', 'to': '1.8'}",,CPA071,Plot,Pending,RQB047,,"60x40 plot at Brigade Neem Groove in Brigade Orchards, Devanahalli.",RQB047,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733682600,0,0,Peninsula heights,"{'from': '15', 'to': '15'}",,INT006,Apartment,Pending,RQB048,4 BHK,3 or 4 BHK upto 15 cr,RQB048,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733769000,0,0,Prestige Sunrise Park,"{'from': '', 'to': ''}",Market Value,CPA125,Apartment,Pending,RQB049,3 BHK,"3 BHK in Prestige sunrise park , electronic city , as per marke",RQB049,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733769000,0,0,Electronic City,"{'from': '', 'to': ''}",Market Value,INT001,Apartment,Pending,RQB050,3 BHK,,RQB050,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733769000,0,0,Bollineni Silas,"{'from': '', 'to': ''}",Market Value,CPA537,Apartment,Pending,RQB051,3 BHK,,RQB051,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733769000,0,0,Prestige Shantiniethan,"{'from': '', 'to': ''}",Market Value,CPA082,Apartment,Pending,RQB052,4 BHK,"4 BHK , higher foor",RQB052,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733855400,0,0,Sumadhura Folium,"{'from': '', 'to': ''}",Market Value,CPA603,Apartment,Pending,RQB053,3 BHK,,RQB053,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733855400,0,0,Chatanya Samarth,"{'from': '', 'to': ''}",Market Value,CPA003,Apartment,Pending,RQB054,3 BHK,,RQB054,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733855400,0,0,Nikoo Homes 2,"{'from': '', 'to': ''}",Market Value,CPA413,Apartment,Pending,RQB056,2.5 BHK,,RQB056,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733855400,0,0,Nikoo Homes 4,"{'from': '', 'to': ''}",Market Value,CPA413,Apartment,Pending,RQB057,2.5 BHK,,RQB057,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733855400,0,0,Tata Promont ,"{'from': '', 'to': ''}",Market Value,CPA026,Apartment,Pending,RQB058,3 BHK,,RQB058,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733855400,0,0,JRC Palladio,"{'from': '3', 'to': '4'}",,CPA595,Apartment,Pending,RQB059,3 BHK,,RQB059,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733855400,0,0,SNN Clermont,"{'from': '4', 'to': '4'}",,CPA595,Apartment,Pending,RQB060,3 BHK,,RQB060,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733855400,0,0,L&T Raintree Boulevard,"{'from': '', 'to': ''}",Market Value,CPA036,Apartment,Pending,RQB061,3.5 BHK,,RQB061,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733855400,2500,0,Plot Before Airprot toll,"{'from': '', 'to': ''}",Market Value,CPA036,Plot,Pending,RQB062,,Plots 2000 to 2400 Sft Before Airport toll North or East facing .,RQB062,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733855400,0,0,Nikoo 2,"{'from': '1.2', 'to': '1.3'}",,CPA036,Apartment,Pending,RQB063,2 BHK,,RQB063,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733855400,0,0,Prestige Woodside,"{'from': '5', 'to': '5'}",,CPA481,Apartment,Pending,RQB064,,,RQB064,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733855400,0,0,Prestige sunrise park,"{'from': '', 'to': ''}",Market Value,CPA125,Apartment,Pending,RQB065,3 BHK,,RQB065,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733941800,0,0,marathalli,"{'from': '2', 'to': '2'}",,CPA136,villa,Pending,RQB067,,"Independent building, or villa
+Near balagere road, varthur, gunjur Marathahalli locality",RQB067,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733941800,0,0,Prestige Song of South,"{'from': '2', 'to': '2'}",,CPA010,Apartment,Pending,RQB068,,,RQB068,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734373800,2500,0,Mantri Espana,"{'from': '4', 'to': '4'}",,CPA379,Apartment,Pending,RQB070,,2500 plus sqft at mantri Espana or sobha projects at bellandur 4 cr budget,RQB070,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734546600,6000,0,Sarjapur,"{'from': '', 'to': ''}",Market Value,CPA632,Plot,Pending,RQB071,,Let me know in 6K price also .,RQB071,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734546600,2200,0,Sarjapur,"{'from': '4', 'to': '4'}",,CPA379,Apartment,Pending,RQB072,3 BHK,"3bhk Appartment near Sarjapur, Bannerghatta 2200+Or 3 plus servent or study ",RQB072,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734546600,0,0,  RR Nagar,"{'from': '1.6', 'to': '1.6'}",,CPA496,Independent Building,Pending,RQB073,,,RQB073,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734633000,0,0,Prestige Ozone,"{'from': '7.5', 'to': '7.5'}",,CPA413,villa,Pending,RQB074,,Type A villa,RQB074,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734719400,0,0,North,"{'from': '2.5', 'to': '2.5'}",,CPA632,Apartment,Pending,RQB076,4 BHK,"North Bengaluru 
+4BHK, 4.5 BHK and 2.5cr budget",RQB076,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734892200,0,0,Arvind oasis,"{'from': '', 'to': ''}",Market Value,CPA576,Apartment,Pending,RQB077,3 BHK,My client is looking 3bhk in Arvind oasis to buy she wants upar floor North or East facing ,RQB077,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734892200,1200,0,prestige lakeside habitat,"{'from': '', 'to': ''}",Market Value,CPA603,Apartment,Pending,RQB081,2 BHK,"2 bhk 1200sqft+
+nort and east facing
+5+ floor anything available",RQB081,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734892200,0,0,"Padmanabhanagar, RR nagar, Hoskerehalli ","{'from': '.60', 'to': '.65'}",,CPA103,Apartment,Pending,RQB083,2 BHK,"Required gud 2bhk flats in following area in budget 60-65L max :
+Padmanabhanagar
+RR nagar 
+Hoskerehalli 
+South Bangalore",RQB083,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734892200,0,0,North Bengaluru,"{'from': '2.5', 'to': '2.5'}",,CPA632,Apartment,Pending,RQB084,4.5 BHK,"North Bengaluru 
+4BHK, 4.5 BHK and 2.5cr budget",RQB084,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734892200,0,0,PURVA PARK,"{'from': '', 'to': ''}",Market Value,CPA634,Apartment,Pending,RQB085,,,RQB085,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734892200,3600,0,Vaswani’s reserve,"{'from': '', 'to': ''}",Market Value,CPA225,Penthouse,Pending,RQB086,,,RQB086,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735756200,0,0,"North Bengaluru, Thanisandra","{'from': '1.5', 'to': '1.5'}",,CPA516,Independent Building,Pending,RQB087,,independent house North Bangalore Thanisandra main road Budget 1.5 cr,RQB087,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735756200,0,0,Assetz Marq,"{'from': '3.5', 'to': '4'}",,CPA664,Apartment,Pending,RQB088,4 BHK,want a 4bhk in Assetz marq 2.0 tower J or L,RQB088,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735756200,0,0,Prestige Waterford,"{'from': '', 'to': ''}",Market Value,CPA025,Apartment,Pending,RQB089,3.5 BHK,"3.5bhk tower 3 or 4 
+Pool facing 
+Above 3rd floor 
+Any door facing ",RQB089,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735756200,0,0,Prestige Waterford,"{'from': '', 'to': ''}",Market Value,CPA025,Apartment,Pending,RQB090,4.5 BHK,"4.5bhk tower 6 
+Any unit 
+Above 3rd floor 
+Any door facing Full chq payment 
+Customer will take loan on sale agreement value 75% 
+
+ 
+",RQB090,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735756200,0,0,yeshwantpur ,"{'from': '1.5', 'to': '1.5'}",,CPA496,Independent Building,Pending,RQB091,,30×40 plots are independent house in yeshwantpur budget 1.5,RQB091,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735842600,0,0,SNN Clermont,"{'from': '4.', 'to': '6'}",,CPA113,Apartment,Pending,RQB092,4-5 BHK,"Lower floors 
+Budget-4-6 cr
+Project 
+SNN Clermont 
+Godrej platinum 
+Sobha HRC Prestine",RQB092,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735842600,0,0,Godrej platinum,"{'from': '4.', 'to': '6'}",,CPA113,Apartment,Pending,RQB093,4-5 BHK,"Lower floors 
+Budget-4-6 cr
+Project 
+SNN Clermont 
+Godrej platinum 
+Sobha HRC Prestine",RQB093,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1735842600,0,0,Sobha HRC Prestine,"{'from': '4.', 'to': '6'}",,CPA113,Apartment,Pending,RQB094,4-5 BHK,"Lower floors 
+Budget-4-6 cr
+Project 
+SNN Clermont 
+Godrej platinum 
+Sobha HRC Prestine",RQB094,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736793000,0,0,"frazer town,cooke town,jay mahal or benson town area","{'from': '1.8', 'to': '1.8'}",,CPA630,Apartment,,RQB095,3 BHK,,RQB095,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736793000,0,0,Sobha City Paradise tower 2,"{'from': '', 'to': ''}",Market Value,CPA768,Apartment,,RQB096,3 BHK,3bhk large,RQB096,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736879400,0,0,Nikoo Homes 2,"{'from': '', 'to': ''}",Market Value,CPA080,Apartment,,RQB100,2 BHK,2 BHK in Nikoo Homes - Ready to move | North or East Facing,RQB100,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736879400,3000,0,Independent Bungalow,"{'from': '7', 'to': '7'}",Market Value,CPA080,Independent Building,,RQB101,,Independent Bungalow on Hennur Road or KR Puram - No Gated Community,RQB101,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736879400,0,0,Prestige Song of South,"{'from': '', 'to': ''}",Market Value,CPA239,Apartment,,RQB102,3 BHK,,RQB102,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736879400,0,0,Cooketown ,"{'from': '10', 'to': '10'}",,CPA008,,,RQB105,4 BHK,,RQB105,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736879400,0,0,Sobha Palladian,"{'from': '', 'to': ''}",Market Value,CPA008,Apartment,,RQB106,3 BHK,,RQB106,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736879400,0,0,Sobha Palm Court,"{'from': '', 'to': ''}",Market Value,CPA017,Apartment,,RQB107,3 BHK,,RQB107,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736879400,0,0,Adarsh Crest,"{'from': '', 'to': ''}",Market Value,CPA017,Apartment,,RQB108,2 BHK,,RQB108,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736879400,4000,0,Adarsh Savana,"{'from': '', 'to': ''}",Market Value,CPA017,Plot,,RQB109,,,RQB109,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736879400,1500,0,Near Marathahalli or Whitefield,"{'from': '1.7', 'to': '1.7'}",,CPA263,Apartment,,RQB110,3 BHK,"Property Type: 3 BHK Apartment
+Preferred Area: Near Marathahalli or Whitefield
+Status: Ready to Move In
+Budget: ₹1.7 Cr
+Minimum SBUA: 1500+ sqft",RQB110,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736879400,0,0,Sumadhura Folium,"{'from': '', 'to': ''}",Market Value,CPA017,Apartment,,RQB111,3 BHK,,RQB111,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736965800,1700,0,Godrej Aqua,"{'from': '', 'to': ''}",Market Value,CPA722,Apartment,,RQB112,3 BHK,East/ North Facing,RQB112,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736965800,1700,0,Godrej Aqua,"{'from': '', 'to': ''}",Market Value,CPA722,Apartment,,RQB113,3 BHK,East/ North Facing,RQB113,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736965800,0,0,Brigade Laguna,"{'from': '2', 'to': '2'}",,CPA185,Apartment,,RQB114,3 BHK,,RQB114,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736965800,4000,0,TE Windmills Of Your Mind / Pursuit of a Radical Rhapsody,"{'from': '9', 'to': '9'}",,CPA329,Apartment,,RQB115,Duplex Unit,,RQB115,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736965800,4000,0,Century Artizan ,"{'from': '', 'to': ''}",Market Value,CPA016,Plot,,RQB116,,,RQB116,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736965800,4000,0,Jade garden,"{'from': '', 'to': ''}",Market Value,CPA016,Plot,,RQB117,,,RQB117,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736965800,0,0,Godrej Anand,"{'from': '1', 'to': '1'}",,CPA698,apartment,,RQB118,3BHK,east facing,RQB118,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736965800,0,0,Prestige Shantinikethan,"{'from': '', 'to': ''}",Market Value,CPA551,Apartment,,RQB119,3-3.5,,RQB119,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736965800,0,0,Brigade Lakefront,"{'from': '', 'to': ''}",Market Value,CPA551,Apartment,,RQB120,3-3.5,,RQB120,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1736965800,0,0,Prestige Waterford,"{'from': '', 'to': ''}",Market Value,CPA551,Apartment,,RQB121,3-3.5,,RQB121,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737052200,0,0,"HSR, Kormangala","{'from': '1.2', 'to': '1.2'}",,CPA459,,,RQB124,,,RQB124,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737138600,0,0,Pramuk M M MERIDIAN,"{'from': '', 'to': ''}",Market Value,CPA584,Apartment,,RQB125,4 BHK,JAYANAGAR 7th Block ,RQB125,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737138600,2000,0,JAYANAGAR/ Jpnagar & Banashankari ,"{'from': '', 'to': ''}",Market Value,CPA584,Apartment,,RQB126,,"North Or East 
+Gated community Or Individual",RQB126,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737138600,0,0,"Suguna ""PRISTINE SQUARE""","{'from': '', 'to': ''}",Market Value,CPA584,Apartment,,RQB127,2 BHK and 3 BHK,"RRNAGAR Kempegowda Road 
+Near Shakti Hills & Shenmukha Temple ",RQB127,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737138600,1500,0,bellandur to sarjapur road,"{'from': '', 'to': ''}",Market Value,CPA089,Apartment,,RQB128,3 BHK,near Decathlon. RTMI.,RQB128,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737225000,0,0,Hopefarm to Channasandra Rd,"{'from': '6.5', 'to': '6.5'}",,CPA949,Villa,,RQB129,,RTMI,RQB129,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737225000,25000,0,Electronic City,"{'from': '10', 'to': '10'}",,CPA949,Villa,,RQB130,,RTMI,RQB130,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737225000,0,0,"House of Hiranandani, Bannerghatta ","{'from': '', 'to': ''}",Market Value,CPA595,Apartment,,RQB131,3 BHK,3 or 4 BHK,RQB131,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737397800,0,0,purva fountain square,"{'from': '1.40', 'to': '1.50'}",,CPA759,Apartment,,RQB132,2 BHK,,RQB132,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737484200,0,0,SOBHA SILICON OASIS,"{'from': '1.40', 'to': '1.50'}",,CPA759,Apartment,,RQB133,2 BHK,,RQB133,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737397800,0,0,Prestige Mayberry,"{'from': '4.5', 'to': '4.5'}",,CPA415,Villa,,RQB134,3 BHK,,RQB134,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737484200,1200,0,prestige park drive ,"{'from': '', 'to': ''}",Market Value,CPA759,plot,,RQB135,,immediate,RQB135,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737484200,0,0,"kormangala, JP Nagar","{'from': '15', 'to': '20'}",,CPA765,Commercial Building,,RQB136,,,RQB136,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737484200,3000,0,Richmond Town,"{'from': '7.1', 'to': '8'}",,CPA765,Apartment,,RQB137,3 BHK,,RQB137,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737484200,0,0,Adarsh crest  ,"{'from': '', 'to': ''}",Market Value,CPA017,Apartment,,RQB138,3 BHK,,RQB138,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737484200,0,0,Sobha Palm Court,"{'from': '', 'to': ''}",Market Value,CPA017,Apartment,,RQB139,3 BHK,,RQB139,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737484200,0,0,Prestige Jindal City,"{'from': '', 'to': ''}",Market Value,CPA035,Apartment,,RQB140,3 BHK,,RQB140,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737484200,0,0,Prestige Westwood,"{'from': '', 'to': ''}",Market Value,CPA584,Apartment,,RQB142,3BHK,need 3 TOILETS,RQB142,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737570600,0,0,prestige green gables,"{'from': '', 'to': ''}",Market Value,CPA698,Apartment,,RQB143,3BHK,3 toilets above 10th floor,RQB143,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737570600,0,0,sattva luxuria,"{'from': '', 'to': ''}",Market Value,CPA698,Apartment,,RQB144,3BHK,above 5 th floor,RQB144,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737570600,2400,0,Adarsh Savana,"{'from': '', 'to': ''}",Market Value,CPA513,Plot,,RQB145,,,RQB145,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737916200,0,0,Chaitanya Smaran ,"{'from': '', 'to': ''}",Market Value,CPA003,Villa,,RQB146,4 BHK,,RQB146,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1737916200,0,0, Adarsh Palm Retreat,"{'from': '', 'to': ''}",Market Value,CPA003,Villa,,RQB147,4 BHK,,RQB147,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738002600,0,0,Sobha ultima,"{'from': '', 'to': ''}",Market Value,CPA197,Apartment,,RQB148,,,RQB148,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738002600,0,0,Sobha zircon,"{'from': '', 'to': ''}",Market Value,CPA197,Apartment,,RQB149,,,RQB149,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738002600,0,0,Sobha malachite,"{'from': '', 'to': ''}",Market Value,CPA197,Apartment,,RQB150,,,RQB150,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738002600,0,0,Sobha amber,"{'from': '', 'to': ''}",Market Value,CPA197,Apartment,,RQB151,,,RQB151,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738002600,0,0,Escencia,"{'from': '', 'to': ''}",Market Value,CPA197,Apartment,,RQB152,,,RQB152,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738002600,0,0,Garden enclave,"{'from': '', 'to': ''}",Market Value,CPA197,Apartment,,RQB153,,,RQB153,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738002600,0,0,Crown aura,"{'from': '', 'to': ''}",Market Value,CPA197,Apartment,,RQB154,,,RQB154,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738002600,0,0,Legacy dimora,"{'from': '', 'to': ''}",Market Value,CPA197,Apartment,,RQB155,,,RQB155,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738002600,0,0,Renaissance extotica,"{'from': '', 'to': ''}",Market Value,CPA197,Apartment,,RQB156,,,RQB156,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738002600,0,0,"sarjapur,bellandur,harlur","{'from': '4', 'to': '4'}",,CPA807,,,RQB157,,,RQB157,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738089000,0,0,DNR Arista,"{'from': '1.6', 'to': '1.6'}",,CPA603,Apartment,,RQB158,,,RQB158,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738175400,0,0,Prestige Jindal City,"{'from': '', 'to': ''}",Market Value,CPA922,Apartment,,RQB159,2 BHK,,RQB159,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738261800,0,0,Sobha ROyal Pavillion,"{'from': '', 'to': ''}",Market Value,CPA727,Apartment,,RQB160,4 BHK,,RQB160,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738261800,0,0,Prestige Park Groove,"{'from': '', 'to': ''}",Market Value,CPA695,Apartment,,RQB161,3 BHK,,RQB161,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738261800,0,0,prestige leela residency,"{'from': '', 'to': ''}",Market Value,CPA695,Apartment,,RQB162,3 BHK,,RQB162,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738261800,0,0,Prestige Waterford ,"{'from': '', 'to': ''}",Market Value,CPA695,Apartment,,RQB163,4 BHK,1 and 4 BHK needed,RQB163,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738348200,0,0,house of hiranandani,"{'from': '3', 'to': '3'}",,CPA826,Apartment,,RQB164,,need around 3 cr in devanhalli,RQB164,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738348200,4000,0,Embassy spring,"{'from': '', 'to': ''}",Market Value,CPA826,plot,,RQB165,,,RQB165,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738348200,0,0,shobha indraprastha,"{'from': '4', 'to': '4'}",,CPA697,Apartment,,RQB166,4 BHK,North/East facing door and East/west facing balcony,RQB166,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738521000,0,0,"Whitefield,Bellandur, Martahalli, Sarjapura Road","{'from': '0.7', 'to': '0.7'}",,CPA695,Apartment,,RQB167,1 BHK, Higher Floor,RQB167,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738521000,0,0,"Brigade metropolis, Brigade lakefront, Durga petals","{'from': '2', 'to': '2'}",,CPA870,Apartment,,RQB168,3 BHK,2-3 BHK higher floor,RQB168,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738521000,0,0,The Five Summits address,"{'from': '', 'to': ''}",Market Value,CPA049,Apartment,,RQB169,3 BHK,whitefield,RQB169,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738607400,40000,0,Within 20-25km of MG Road,"{'from': '', 'to': ''}",Market Value,CPA581,Commercial Building,,RQB170,,Bommasandra,RQB170,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738607400,1500,0,Manyata Morefields,"{'from': '', 'to': ''}",Market Value,CPA256,Plot,,RQB171,,Sarjapura Road,RQB171,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738607400,0,0,"New Airport Road, Yelahanka","{'from': '', 'to': ''}",Market Value,CPA403,Plot,,RQB172,,,RQB172,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738607400,6000,0,"Kaggadasapura, Bidralli, Kr puram","{'from': '2', 'to': '3'}",,CPA274,Plot,,RQB173,,"Kaggadasapura, Bidralli, Kr puram",RQB173,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738780200,0,0,Assetz Bloom & Dell,"{'from': '', 'to': ''}",Market Value,CPA017,Apartment,,RQB174,4 BHK,,RQB174,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738780200,0,0,Sumadhura Folium,"{'from': '', 'to': ''}",Market Value,CPA017,Apartment,,RQB175,3 BHK,,RQB175,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738780200,0,0,Sobha Palm Court,"{'from': '', 'to': ''}",Market Value,CPA017,Apartment,,RQB176,3 BHK,,RQB176,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738780200,0,0,TATA Swaram,"{'from': '', 'to': ''}",Market Value,CPA017,Plot,,RQB177,,,RQB177,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738866600,0,0,Sobha Royal Pavillion,"{'from': '', 'to': ''}",Market Value,CPA140,Apartment,,RQB178,4 BHK,South-East facing door,RQB178,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738866600,0,0,Adarsh Palm Retreat,"{'from': '', 'to': ''}",Market Value,CPA085,Villa,,RQB179,,,RQB179,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738866600,0,0,Hiranandani Glen Classic,"{'from': '', 'to': ''}",Market Value,CPA449,Apartment,,RQB180,3 BHK,,RQB180,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738953000,0,0,semi commercial plot ,"{'from': '', 'to': ''}",Market Value,CPA866,Plot,,RQB181,,"jaynagar Preferred in 4th, 5th or 4T block 
+Budget - 30,000 per sqft",RQB181,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1738953000,0,0,Regency La  Majada,"{'from': '', 'to': ''}",Market Value,CPA767,Apartment,,RQB182,3 Bhk,2 or 3 Bhk in hennur,RQB182,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739125800,0,0,Snn raj eternia,"{'from': '', 'to': ''}",Market Value,CPA807,Apartment,,RQB183,3 BHK,2 or 3 BHK IN NEW TOWERS ,RQB183,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739125800,1200,0,Prestige City Plot,"{'from': '', 'to': ''}",Market Value,CPA690,Plot,,RQB184,,1200 - 1500 Sqft plot in Prestige city,RQB184,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739125800,1841,0,Purva Highland,"{'from': '1.2', 'to': '1.2'}",,CPA695,Apartment,,RQB185,3 BHK,east facing 5-10 floor,RQB185,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739212200,15000,0,Commercial building,"{'from': '', 'to': ''}",Market Value,CPA899,Commercial Building,,RQB186,,10-15000sqft,RQB186,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739298600,0,0,Republic of whitefield,"{'from': '', 'to': ''}",Market Value,CPA607,Apartment,,RQB187,2 BHK,,RQB187,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739298600,0,0,Republic of whitefield,"{'from': '', 'to': ''}",Market Value,CPA607,Apartment,,RQB188,3 BHK,,RQB188,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739298600,0,0,Golden Blossom,"{'from': '', 'to': ''}",Market Value,CPA607,Apartment,,RQB189,2 BHK,,RQB189,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739298600,0,0,Raheja Residency,"{'from': '1.5', 'to': '1.5'}",,CPA695,Apartment,,RQB190,2 BHK,east facing,RQB190,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739298600,0,0,Prestige Pinewoods,"{'from': '1.5', 'to': '1.5'}",,CPA695,Apartment,,RQB191,2 BHK,east facing,RQB191,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739298600,0,0,Prestige Waterford,"{'from': '1.05', 'to': '1.05'}",,CPA720,Apartment,,RQB192,1 BHK,,RQB192,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739298600,0,0,Sattva Laurel Heights,"{'from': '', 'to': ''}",Market Value,CPA690,Apartment,,RQB193,2 BHK,,RQB193,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1739298600,0,0,Adarsh Pam Retreat,"{'from': '', 'to': ''}",Market Value,CPA720,Villa,,RQB194,,,RQB194,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733712692,0,1733732492, Peninsula heights,"{'from': 0, 'to': 15}",,INT001,apartment,Pending,RQA117,4 BHK,3 or 4 BHK upto 15 cr,TJBmgkHpHFjIgxLokG0D,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732885533,0,1732905333,Rohan Upavan,"{'from': '', 'to': ''}",Market Value,CPA170,apartment,Pending,RQA098,3 BHK,"3 bhk 
+Facing East , North
+",UQdPCbOq1bDRwCywymAs,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732859196,2400,1732878996,Brigade owsis,"{'from': '', 'to': ''}",Market Value,INT001,plot,Pending,RQA091,,"Plots , 2400 sqft ",Ujj4iogqlrEdBJff8Erp,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733464050,1800,1733483850,Adarsh park heights ,"{'from': '', 'to': ''}",Market Value,CPA409,apartment,Pending,RQA111,3 BHK,3 bhk east facing phase 1,UmtYj9xs9Vn5q2PQ1aFQ,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732778153,0,1732797953,House of hirandani - Devanahalli airport road,"{'from': 0, 'to': 4}",,CPA000,villa,Pending,RQA080,4BHK,"House of hirandani - Devanahalli airport road 4 BHK, Villa",V5L6vhdkaGMriEEUny6O,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733441956,1200,1733461756,Prestige palms ,"{'from': '', 'to': ''}",Market Value,CPA409,apartment,Pending,RQA105,2 BHK,Need 2 bhk with 2 balcony ,VXfknwTlbFe0lytvOx2d,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734409293,0,1734429093,"Brookfield, ITPL, Whitefield","{'from': '', 'to': ''}",Market Value,CPA058,apartment,Pending,RQA132,2 BHK,"2bhk - Good community - Max 10yrs old, Tyre A builders",W9OJjhWv94X86vrO9kSv,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732924163,1299,1732943963,Prestige Misty Waters ,"{'from': '', 'to': ''}",Market Value,CPA080,apartment,Pending,RQA099,2.5 BHK,2.5 BHK ,X1WZZ9RQ1kDoiSWG4Xoq,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733875333,0,1733895133,Prestige shantiniketan ,"{'from': '', 'to': ''}",Market Value,CPA539,apartment,Pending,RQA122,4 BHK,"4BHK, higher floor ",X7Z9ulwkFG3iTBqdr3lt,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733875130,0,1733894930,Prestige shantiniketan ,"{'from': '', 'to': ''}",Market Value,CPA539,apartment,Pending,RQA121,4 BHK,"4BHK , higher floor ",XwmDOOmw719bdTwTJwEh,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732861789,1700,1732881589,sarjapur road,"{'from': 2.1, 'to': 2.2}",,CPA256,apartment,Pending,RQA094,3 BHK,Ready to move or tenanted 3bhk-3 baths from reputed builder before decathlon flyover,XyxA2GT09Pe6p3UO4UuS,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734162595,1350,1734182395,prestige westwood,"{'to': 2.2, 'from': 2}",,CPA363,apartment,Pending,RQA128,2.5 BHK,2.5 bhk,ZUGO2OJLqtZTLTCly3uE,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733198605,2300,1733218405,Sarjapur road and Whitefield,"{'from': '', 'to': ''}",Market Value,CPA409,apartment,Pending,RQA101,4 BHK,4 bhk vasthu unit ,ZdosITMknpzJgEAM2ETv,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734248740,0,1734268540,Woodsong Around the Mangoes,"{'from': '', 'to': ''}",Market Value,INT003,villa,Pending,RQA131,4BHK,Villa,aQmGQwZkFqM7uhbJN6kG,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733702972,0,1733722772,Prestige Golfshire villas,"{'from': '', 'to': ''}",Market Value,CPA580,villa,Pending,RQA116,4BHK,Large villa ,aWcDxKjCmuCoLbkHLiFv,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732859278,0,1732879078,Prestige Park Grove,"{'from': 0, 'to': 2}",,INT001,apartment,Pending,RQA092,3 BHK,3 bhk ,bwsnVQHGBikFQnlvhtdO,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733280166,0,1733299966,Brigade Lakefront,"{'from': 2.4, 'to': 2.6}",,INT001,apartment,Pending,RQA104,3 BHK,3BHK 2.5cr,dEwDFASpXor862Iksk20,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733278984,0,1733298784,prestige exotica,"{'from': '', 'to': ''}",Market Value,CPA256,apartment,Pending,RQA102,,3/4 bhk - Budget no constraints. Price should be in line with ongoing market price.,eCuYbLZTPyHnNAEx3Un8,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733623053,0,1733642853,Prestige Waterford,"{'from': '', 'to': ''}",Market Value,INT002,apartment,Pending,RQA115,3.5 BHK,,lWvZRcqIsvNfIpbjY9uL,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732872669,1775,1732892469,Prestige water ford,"{'from': 2.6, 'to': 2.85}",,CPA274,apartment,Pending,RQA097,3 BHK,"3 BHK 1775sft middle floor 
+",n9yGp5XaKMV5JySkc8IV,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732864767,1400,1732884567,Bannerghatta Road/ Electronic City Phase 1 or 2,"{'from': 1, 'to': 1.15}",,CPA170,apartment,Pending,RQA096,3 BHK,"Bedroom -3 
+Facing - West, North ,East
+SBA - 1400 sft above 
+Middle Floor 
+Age of Building - 5 years 
+Budget - 1.10 cr
+Going for loan 75%
+
+",nArXhXvMmUesLwTG4cdL,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733906687,2229,1733926487,Assetz Marq ,"{'from': '', 'to': ''}",Market Value,CPA603,apartment,Pending,RQA124,4 BHK,4bhk 1-5th floor,oxGjm9Lz5E9L1k2rOGaC,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733559289,0,1733579089,Republic of Whitefield,"{'from': '', 'to': ''}",Market Value,CPA570,apartment,Pending,RQA113,3 BHK,3 BHK in Republic of Whitefield,pBI5BSsYS5eahKAUjvGp,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733987687,0,1734007487,godrej air,"{'from': '', 'to': ''}",Market Value,CPA579,apartment,Pending,RQA125,,4 bhk higher,pLT4st0UgsGo7tSTrbFY,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734921250,3000,1734941050,looking to buy a flat in a society close to MG road,"{'from': 4, 'to': 4}",,CPA638,apartment,Pending,RQA140,3.5 BHK,"Budget of 4 Cr
+3.5 or 4.5 BHK
+upto 3000 sqft
+should be between the 1st and 6th floor
+preferred ample greenery
+should be close to MG road or Indiranagr
+must have a servants quarters
+must be part pf a community/society with basic ammenities
+",pxLhBfGxdHfZLiPYmHrg,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1734578654,0,1734598454,North,"{'from': '', 'to': ''}",Market Value,CPA545,plot,Pending,RQA133,,Want a plot of 2400 sqft,qTffWylkv1whbq8vYscZ,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732778497,3000,1732798297,HSR Layout,"{'from': '', 'to': ''}",Market Value,INT001,villa,Pending,RQA086,4BHK,"HSR Layout 4 BHK, Villa, Penthouse",r5dyL5p6Es7tiWALVGFM,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733460573,4000,1733480373,BASAVANGUDI ,"{'from': 1, 'to': 1.5}",,CPA584,bungalow,Pending,RQA110,4BHK,Required 3/4bhk for RENT,teU2lFTqNHELsFO0y8Sh,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1732782083,0,1732801883,Sobha Royal Pavillion,"{'from': 0, 'to': 2.15}",,INT002,apartment,Pending,RQA088,3 BHK,3 BHK in Sobha Royal Pavillion 2.15 Cr Budget,wYvyE9zrZDKgoYVIEv4w,int,int,int,str,dict,str,str,str,str,str,str,str,str
+1733278984,0,1733298784,Prestige kenilworth,"{'from': '', 'to': ''}",Market Value,CPA256,apartment,Pending,RQA103,,3/4 bhk - Budget no constraints. Price should be in line with ongoing market price.,zb1gfUze5UDQJikhMFX9,int,int,int,str,dict,str,str,str,str,str,str,str,str

@@ -1,0 +1,488 @@
+added,agentCpid,area,assetType,budget_from,budget_to,configuration,lastModified,marketValue,propertyName,requirementDetails,requirementId,status
+13-12-2024,INT002,0,apartment,,,1 BHK,1734100226,Market Value,test,,RQA126,Closed
+28-11-2024,INT001,0,villa,,,3BHK,1732795848,Market Value,NCC urban Greens villa,"NCC urban Greens villa, 3 BHK, 4 BHK, Villa 4cr",RQA078,Pending
+14-12-2024,CPA363,3000,apartment,5,5.5,4 BHK,1734182395,,salarpuria sattva luxuria,4 bhk,RQA127,Pending
+06-12-2024,CPA584,4000,bungalow,1,1.25,3BHK,1733480373,,JAYANAGAR,Required Independent  3/4bhk For RENT,RQA109,Pending
+28-11-2024,INT001,0,duplex,,,4BHK,1732798463,Market Value,Embassy Groove,"Duplex or triplex in Embassy Groove , Golf course facing as per market price",RQA087,Pending
+29-11-2024,INT001,0,apartment,,,2 BHK,1732879155,Market Value,Prestige Misty Water,"2 BHK , as per market",RQA093,Pending
+23-12-2024,CPA638,3000,apartment,4,4.2,3.5 BHK,1734941050,,Addharsh Palm Springs ,"- Budget is 4 Cr
+- Upto 3000 sqft
+-  Shouldn't be in the ground floor
+- 3 or 4 BHK with servant quarters",RQA138,Pending
+15-12-2024,CPA500,0,apartment,0,10,3 BHK,1734267882,,Bangalore,Any kind of property with only guidance value on paper. ,RQA130,Pending
+03-12-2024,CPA409,3000,apartment,,,3 BHK,1733218332,Market Value,South Bangalore ,"Sobha morzaria grandeur 
+Mahindra windchimes 
+Prestige pinewood 
+Snn raj lake view",RQA100,Pending
+11-12-2024,CPA609,0,villa,,,4BHK,1733917594,Market Value,Chaitniya samarpan,Villa,RQA123,Pending
+10-12-2024,CPA392,0,apartment,,,3 BHK,1733792684,Market Value,Whitefield ,3 bhk budget 2.5 cr,RQA119,Pending
+06-12-2024,CPA584,0,apartment,2,2.5,,1733480373,,Birla Tisya ,Required 3bhk Immediate settlement ,RQA108,Pending
+29-11-2024,INT002,0,apartment,,,2 BHK,1732878657,Market Value,Niko homes phase 2,,RQA090,Pending
+11-12-2024,CPA539,0,apartment,,,4 BHK,1733894454,Market Value,Prestige shantiniketan ,"4BHK ,higher floor ",RQA120,Pending
+09-12-2024,CPA584,1369,apartment,2.5,2.7,3 BHK,1733770897,,Birla TISYA,Required 3bhk ,RQA118,Pending
+14-12-2024,CPA363,600,apartment,4.5,5,1 BHK,1734182395,,vaishnavi serein,,RQA129,Pending
+07-12-2024,CPA584,1263,apartment,1.7,2.25,2 BHK,1733560786,,Prestige Westwoods ,Required urgently 2/2.5bhk Preferred East/West facing Immediate Settlement,RQA112,Pending
+29-11-2024,CPA170,1300,apartment,1.2,1.4,,1732884111,,Jayanagar /Basavangudi/Jp nagar 4th phase,"Bhk -2 or 3 Bhk
+Facing - East or North 
+Age of building - less than 7 years 
+Budget - 1.4 cr
+Preferred hindu community.
+Immediate booking 
+Self funding",RQA095,Pending
+19-12-2024,INT002,0,apartment,,,3 BHK,1734599879,Market Value,test,,RQA134,Closed
+20-12-2024,CPA570,0,apartment,,,4 BHK,1734679417,Market Value,Windmills,3/4 BHK,RQA135,Pending
+21-12-2024,CPA584,3000,apartment,2.5,3.5,,1734782664,,JPNAGAR near Delmia Circle,Required 3/4bhk Apartment for immediate purchase,RQA136,Pending
+23-12-2024,CPA011,1800,apartment,,,3 BHK,1734922546,Market Value,Sobha Windsor,"3 BHK, 1800 plus sq.ft, above 10th floor, balcony facing should be east, preferred Wings are 3 & 4 mainly and Wings 7 & 8  also fine.
+Purchaser is into C component of 30%  total value.",RQA137,Closed
+23-12-2024,CPA138,3000,apartment,,,3.5 BHK,1734947291,Market Value,Valmark Apas,3/4bhk on higher floors(atleast above 5th floor ),RQA139,Pending
+23-12-2024,CPA584,858,apartment,,,2 BHK,1734951000,Market Value,Birla TISYA,Required 2bhk ,RQA141,Pending
+23-12-2024,CPA584,1263,apartment,17000000,19000000,2 BHK,1734951000,,Prestige Westwoods,Required 2bhk ,RQA142,Pending
+23-12-2024,CPA584,1357,apartment,17500000,22000000,2.5 BHK,1734951000,,Prestige Westwoods,Required 2.5bhk,RQA143,Pending
+23-12-2024,CPA584,1700,apartment,,,3 BHK,1734951264,Market Value,Prestige Westwoods ,Required 3bhk,RQA144,Pending
+23-12-2024,CPA584,0,apartment,,,4 BHK,1734951264,Market Value,Prestige Westwoods ,Required 4bhk,RQA145,Pending
+23-12-2024,CPA584,2200,apartment,,,3 BHK,1734951264,Market Value,JPNAGAR Near Delmia circle,Required 3bhk ,RQA146,Pending
+25-12-2024,CPA584,3000,bungalow,1,1.5,4BHK,1735116872,,Jayanagar,Required urgently 3/4bhk Independent House / Bunglow for RENT ,RQA147,Pending
+26-12-2024,CPA094,0,villa,5,5.5,4BHK,1735175099,,Whtefield,4bhk Villa in 5 Cr budget around Whitefield area in a budget of 5CR,RQA148,Pending
+26-12-2024,CPA094,0,independent building,8,9,Commercial Building,1735175099,,HSR Layout or Koramangala,Plot or rental yielding property ,RQA149,Pending
+27-12-2024,CPA071,0,plot,,,,1735279679,Market Value,Manyatha Song of the Earth,60 x 40 plot required for purchase in Manyatha Song of the Earth,RQA150,Pending
+27-12-2024,CPA071,0,plot,,,,1735279679,Market Value,Manyata Earth Song,"Required plot for purchase at Manyata Earth Song, 1800 - 2400 sfr",RQA151,Pending
+30-12-2024,CPA239,1387,apartment,1.5,1.6,3 BHK,1735543068,,prestige city,3 bhk/1387 sq feet,RQA152,Pending
+01-01-2025,CPA664,1200,plot,,,,1735753281,Market Value,Arvind Greatlands ,ARVIND Greatlands Phase 1,RQA153,Pending
+01-01-2025,CPA664,1067,plot,0.76,0.81,,1735753281,,Purva Tivoli Hills,Purva Tivoli Hills,RQA154,Pending
+03-01-2025,CPA071,3000,apartment,,,4 BHK,1735915933,Market Value,Phoenix Bangalore One West,"Purchase of a large 3/4 bhk at Phoenix Bangalore One West
+",RQA155,Pending
+04-01-2025,CPA411,1800,apartment,,,3 BHK,1735972425,Market Value,Prestige Woodland Park,Looking for 2 or 3 or 4 BHK flats in Prestige Woodland Park project as per market price,RQA156,Pending
+04-01-2025,CPA662,0,plot,0,10000000,,1735995891,,Budigere cross ,,RQA157,Pending
+06-01-2025,CPA580,0,apartment,,,3 BHK,1736128788,Market Value,Mantri Elite ,3bhk for purchase required,RQA158,Pending
+06-01-2025,CPA071,1200,plot,,,,1736152189,Market Value,Adarsh Savana,30x40 site for purchase in Adarsh Savana. East facing required,RQA159,Pending
+06-01-2025,CPA071,3000,bungalow,,,,1736160185,Market Value,Jayanagar / JP Nagar,Require a Independent Bunglow for rent in Jayanagar or JP Nagar for pay school. Min plot area of the bunglow should be 3000 sft. Budget upto 3.5 lakhs/month ,RQA160,Pending
+06-01-2025,CPA643,0,plot,10,15,,1736169433,,North Bangalore,"*Urgent Requirement* : Urgently required *Land* for purchase in *North Bengalore* upto 10 - 15 acres. Kindly Call me on 9900097684.
+
+Estate Point",RQA161,Pending
+07-01-2025,CPA595,3000,independent building,,,3.5BHK,1736232938,Market Value,HSR layout ,Looking for individual house 3 or 4bhk,RQA162,Pending
+08-01-2025,CPA584,1080,apartment,,,3 BHK,1736310246,Market Value,Provident Sunworth City,Required 3bhk,RQA163,Pending
+10-01-2025,CPA688,1600,apartment,,,,1736478391,Market Value,Mantri webcity,3 bhk except south facing ,RQA164,Pending
+10-01-2025,CPA700,2400,plot,,,,1736503557,Market Value,Sanjaynagar,"60/40 plot sanjaynagar,rmv as per market price commission side by side. ",RQA165,Pending
+10-01-2025,CPA643,1163,plot,,,,1736508927,Market Value,Prestige Great Acres,Required 1163 sft plot in PGA. Budget: 14k. Immediate settlement,RQA166,Pending
+10-01-2025,CPA705,2000,apartment,2.3,2.5,,1736508989,,Marathalli,2000 sqft North East 1st to 4th floor,RQA167,Pending
+10-01-2025,CPA688,0,apartment,1.15,1.2,,1736519866,,Goyal Piccadilly ,2 bhk flat in higher floors,RQA168,Pending
+11-01-2025,CPA679,5000,commercial building,,,Commercial Building,1736569633,Market Value,Commercial ,"Preleased Commercial units, od reatial  budget 5 cr to 15 cr",RQA169,Pending
+13-01-2025,CPA584,3000,apartment,,,4 BHK,1736749580,Market Value,Adarsh PREMIA ,4bedroom,RQA170,Pending
+13-01-2025,CPA584,2891,apartment,,,3 BHK,1736749580,Market Value,Prestige SouthRidge ,3bedroom for RENT,RQA171,Pending
+14-01-2025,CPA028,0,apartment,,,2 BHK,1736822941,Market Value,Brigade Northridge,2/3 Bhk,RQA172,Pending
+14-01-2025,CPA028,0,apartment,,,3 BHK,1736822941,Market Value,Brigade Northridge,3Bhk,RQA173,Pending
+14-01-2025,CPA628,1500,plot,0.8,0.9,,1736868924,,1500 sq.ft plot in North Bangalore.,Client is looking for a East facing plot in North Bangalore carrying a budget of 90 lakhs to Register immediately and start constructing his home.,RQA174,Pending
+13-01-2025,CPA570,0,apartment,,,2 BHK,1736771934,Market Value,Sobha Dream Acres,,RQA175,Pending
+15-01-2025,CPA688,2400,plot,,,,1736944521,Market Value,Embassy springs ,2400 to 3000 ,RQA176,Pending
+15-01-2025,CPA688,1200,plot,,,,1736944521,Market Value,Nirvana orchid,Plot 1200 ,RQA177,Pending
+15-01-2025,CPA713,1500,apartment,,,3 BHK,1736955549,Market Value,Kormangala,Flat in Kormangala area,RQA178,Pending
+16-01-2025,CPA071,0,plot,,,,1737027041,Market Value,Esteem Misty Hills ,30 x 40 plot in Esteem Misty Hills,RQA179,Pending
+16-01-2025,CPA023,744,apartment,,,1 BHK,1737032358,Market Value,Vaswani Menlo Park,Want to sell,RQA180,Pending
+16-01-2025,CPA023,1635,apartment,,,3 BHK,1737032358,Market Value,vaswani menlo park,want to sell,RQA181,Pending
+18-01-2025,CPA584,3500,apartment,,,4 BHK,1737185300,Market Value,Pramuk M M Meridian ,4bhk ,RQA182,Pending
+18-01-2025,CPA584,1300,apartment,,,2 BHK,1737185300,Market Value,Suguna Pristine Square,2bhk,RQA183,Pending
+18-01-2025,CPA584,1600,apartment,,,3 BHK,1737185300,Market Value,Suguna Pristine Square,3bhk ,RQA184,Pending
+18-01-2025,CPA563,0,apartment,,,4 BHK,1737186874,Market Value,Total Environment Pursuit of Radical Environment ,4bhk L45,RQA185,Pending
+18-01-2025,CPA752,2027,apartment,3.4,3.6,3.5 BHK,1737196310,,Prestige Waterford,3.5 BHK in Higher Floor,RQA186,Pending
+18-01-2025,CPA752,3000,apartment,5,8,4 BHK,1737214247,,North Bengaluru,3000 Sqft apartment,RQA187,Pending
+18-01-2025,CPA584,3000,apartment,,,3 BHK,1737219297,Market Value,Vaishnavi Terrace,3bhk,RQA188,Pending
+18-01-2025,CPA584,3500,apartment,,,4 BHK,1737219297,Market Value,Vaishnavi Terrace,4bhk,RQA189,Pending
+18-01-2025,CPA584,3000,apartment,,,3 BHK,1737219297,Market Value,Total Environment Learning To Fly,3bhk,RQA190,Pending
+18-01-2025,CPA584,3000,apartment,,,3 BHK,1737219297,Market Value,Maratt Pimento,3bhk,RQA191,Pending
+19-01-2025,CPA584,1500,apartment,,,3 BHK,1737288021,Market Value,Godrej Eternity,3bedroom,RQA192,Pending
+19-01-2025,CPA584,1700,apartment,,,3 BHK,1737288021,Market Value,Purva Highland,3bedroom,RQA193,Pending
+20-01-2025,CPA239,1800,apartment,,,3 BHK,1737367018,Market Value,Assetz 63 degree,1600 to 1800 sq feet SBA/2 balcony with utility/ East facing/ vastu complaint,RQA194,Pending
+21-01-2025,CPA163,2400,plot,39600000,39600000,,1737479438,,JP Nagar 9th Phase,"40 x60 South Facing ,BDA Plot for sale in JP Nagar 9th phase imm sale...",RQA196,Closed
+29-01-2025,CPA825,2400,duplex,,,4BHK,1738143069,Market Value,"HSR, Sarjapur, Koramangala",4bhk duplex /apartment or 3bhk ready to move in or within a year handover ,RQA197,Pending
+29-01-2025,CPA825,1200,apartment,1,1.4,2 BHK,1738143069,,DLF WESTEND HEIGHTS ,2BHK OR 3BHK-2T ,RQA198,Pending
+30-01-2025,CPA838,1700,apartment,2.5,2.7,3 BHK,1738215158,,Around Koramangala ,3BHK| 1700 sqft| Budget- 2.7cr (slightly flexible),RQA199,Pending
+30-01-2025,CPA363,1500,apartment,,,3 BHK,1738226799,Market Value,sobha royal chrest 3 bhk,"3bhk 3T, east / north/  after 5th floor. ",RQA202,Pending
+31-01-2025,CPA058,2000,apartment,,,3 BHK,1738321468,Market Value,3bhk/4bhk - Bellary Rd to Hosa Rd,"Client looking for 3bhk or Bigger unit around 2000sqft size, Particularly Lake facing Balcony Unit, Middle floors, Locations are Jakkur Hebbal Yelahanka Whitefield Varthur Gunjur Sarjapur Hosa Rd , RTMI / Resale / Within 6months posession",RQA205,Pending
+02-02-2025,CPA422,12075,apartment,,,2 BHK,1738481983,Market Value,Falcon City,2 or 3 BHK ,RQA207,Pending
+03-02-2025,CPA662,3000,apartment,0,4,4 BHK,1738570855,,Bangalore North,Apartment/ Villa with 4BHK + Servant Quarter from a Grade A builder in Bangalore North,RQA208,Pending
+03-02-2025,CPA870,1800,apartment,,,3 BHK,1738579051,Market Value,"  In Brigade metropolis, Brigade lakefront, Durga petals ","Wanted 
+2-3 BHK semi furnished flat 
+In Brigade metropolis, Brigade lakefront, Durga petals 
+Modern  apartment   
+Highter floor  
+ Budget -  2 Cr
+Contact  with direct inventory 
+  Abhishek
+8105213550
+Golden Nest Realtors",RQA209,Pending
+04-02-2025,CPA842,2700,villament,4,5,4BHK,1738661402,,Ferns Meadows Kothanur ,Villa 4BHK 2700sft 4.5Cr Ferns Meadows in Kothanur,RQA210,Pending
+04-02-2025,CPA842,0,apartment,2.5,3,4 BHK,1738657912,,Unitech Heritage Estate Yelahanka ,4BHK Apartment in Unitech Heritage Estate,RQA211,Pending
+04-02-2025,CPA842,0,apartment,1.3,1.5,3 BHK,1738661723,,Unitech Heritage Estate Yelahanka,3BHK Unitech Heritage Estate Yelahanka,RQA212,Pending
+04-02-2025,CPA842,2400,villament,4,5,4BHK,1738661402,,Asha Township ,4BHK Villa 60*40 2000Sqft 3Cr Asha Township,RQA213,Pending
+04-02-2025,CPA842,0,apartment,1.2,1.5,3 BHK,1738662266,,Mantri Webcity ,3 BHK in Mantri Webcity,RQA214,Pending
+08-02-2025,CPA842,2500,villa,,,3BHK,1739012429,Market Value,Devanhalli ,"Villa North Bangalore Near Airport road 
+North or East facing
+Good amenities with on bigger project area ",RQA215,Pending
+08-02-2025,CPA842,7000,villa,5,7,4BHK,1739018224,,"Hennur main rd , Thanisandra , Kothanur, K Naraynapura, Horamavu , Kalkere","Client Requirements: 4 BHK – 5 BHK Villa (6500 - 8456 Sq.Ft.) | Budget: ₹5 Cr – ₹7 Cr
+
+We are seeking a luxurious villa within a well-established, family-friendly community. The ideal property will be between 6500 to 8456 square feet, featuring 4 or 5 spacious bedrooms, catering to a family with children. The budget for this purchase is between ₹5 Crore and ₹7 Crore.
+
+Key Requirements:
+
+Facing Preference: The villa should ideally be East or North-facing to ensure optimal natural light and ventilation throughout the day.
+
+Family-Oriented Amenities: Given that the client has young children, a property with ample open spaces and child-friendly amenities is essential. The ideal property should feature:
+
+Safe, secure play areas and parks for children
+Dedicated walking and jogging tracks
+Sports facilities (e.g., swimming pool, tennis courts, etc.)
+Green, open spaces for outdoor activities
+Connectivity: The location of the villa must be easily accessible, with major connectivity to key roads and locations such as schools, hospitals, shopping centers, and entertainment hubs. Proximity to main roads and public transport routes is a must for ease of daily commuting.
+
+Spacious Living: The home should be designed to offer plenty of space for a growing family, with large, open-plan living areas and well-sized rooms, particularly for the bedrooms, living, and dining areas.
+
+Security and Privacy: As the client is focused on their family's safety and well-being, 24/7 security within a gated community is a key priority.
+
+Luxury and Exclusivity: The villa should reflect a sense of exclusivity, offering high-end finishes, a modern design, and premium features like a well-equipped kitchen, spacious bathrooms, and high-quality fittings.",RQA216,Pending
+10-02-2025,CPA705,1200,plot,3,4,,1739174614,,Whitfield ,,RQA217,Pending
+10-02-2025,CPA842,2000,apartment,,,3 BHK,1739172977,Market Value," RMZ Galleria , Yelehanka","3BHK 1910Sqft  (east, north, west)",RQA218,Pending
+10-02-2025,CPA842,1800,apartment,,,3 BHK,1739172977,Market Value,Purva Venezia ,"3 BHK 1780 Sq. Ft(west, east, north)",RQA219,Pending
+10-02-2025,CPA842,1500,apartment,,,3 BHK,1739172977,Market Value,Nagarjuna Meadows,3BHK (East West North),RQA220,Pending
+10-02-2025,CPA842,2500,villa,,,3.5BHK,1739172977,Market Value, Shobha Victoria Park,"3.5 BHK 2547 Sq. Ft (East, West, North)",RQA221,Pending
+10-02-2025,CPA842,1962,apartment,,,3 BHK,1739172977,Market Value, Vista Spaces Vasishta,"3 BHK 1962 Sq. Ft. (East, West, North)",RQA222,Pending
+10-02-2025,CPA842,1500,plot,,,,1739172977,Market Value,Adarsh Savanna,"1200 sft or 1500 sft, East or North ",RQA223,Pending
+10-02-2025,CPA842,4500,villa,,,4BHK,1739172977,Market Value,Asha township," 4BHK Villa 60*40  (plot)  Asha Township  east or north facing, Vaastu complaint",RQA224,Pending
+10-02-2025,CPA842,1750,apartment,,,3 BHK,1739172977,Market Value,Brigade Orchards Juniper,"3 BHK  (East, west, north facing)",RQA225,Pending
+07-02-2025,CPA695,1841,apartment,1.2,1.3,3 BHK,1738926578,,Purva Highland,3 BHK,RQA226,Pending
+11-02-2025,CPA842,2000,villa,,,3BHK,1739259709,Market Value,Devanahalli North Bangalore,"Villa North Bangalore Near Airport   
+North or East facing
+Good amenities with on bigger project area",RQA227,Pending
+11-02-2025,CPA842,3500,villa,,,3BHK,1739259709,Market Value,horamavu,3BHK + Study room Villa ( East West north),RQA228,Pending
+11-02-2025,CPA842,3500,villa,,,4BHK,1739261138,Market Value,LG Lake view Dew,"4bhk villa (north, east, west, facing)",RQA229,Pending
+11-02-2025,CPA842,1700,villa,1,1.5,3BHK,1739261664,,Presitige royal Garden,"3 BHK + Study room , Extra room (East West North)",RQA230,Pending
+11-02-2025,CPA842,1700,apartment,,,3 BHK,1739261842,Market Value,chowriappa constellation,3BHK (North East West) facing,RQA231,Pending
+11-02-2025,CPA842,2700,apartment,1,1.5,4 BHK,1739261842,,Nagavara,4 BHK ( East Wet North),RQA232,Pending
+10-02-2025,CPA678,0,apartment,,,2 BHK,1739192931,Market Value,DNR arista,2bhk in phase 2 or 1,RQA233,Pending
+12-02-2025,CPA953,0,apartment,,,2.5 BHK,1739365762,Market Value,"Hennur , kr puram , banaswadi, hbr, cv raman nagar ,marathalli","Ready to move or close to move in 2 or 3 bhk needed low rise structure,  less amenities also fine ..clear paperwork mandatory ",RQA234,Pending
+12-02-2025,CPA274,0,apartment,1.7,1.75,3 BHK,1739371311,,Brigade Calista Ph 1,"Brigade Calista Ph 1
+Around 1.7 cr
+Above 5th floor
+Facing : Sunlight should come in mainly. Any door facing would do.",RQA235,Pending
+13-02-2025,INT001,0,villa,12.5,13,4BHK,1739436453,,Adarsh palm retreat ,,RQA236,Closed
+13-02-2025,CPA953,5000,plot,,,,1739435803,Market Value,"Hennur ,kothanur ,","Need a minimum of 3000sqft of land for lease for a period of 3 to 5 years  , if vacant land a temporary structure can be set up , this is for a temporary church premises.. till such time their construction gets completed .. if a building exists  options can be seen for use .
+Outright sale options can be seen ",RQA237,Pending
+13-02-2025,CPA842,4200,duplex,5,7,5BHK,1739439871,,Indiranagar,independent house (East West North)facing,RQA238,Pending
+13-02-2025,CPA842,2900,penthouse,3,3.5,5BHK,1739439871,,Purva Venezia ,5BHK (East West North ),RQA239,Pending
+14-02-2025,CPA842,4500,apartment,4,5,3 BHK,1739507347,,Embassy lake ,"Garden view only
+Embassy lake terraces 9F ,  12f, or 18F ( floor)",RQA240,Pending
+14-02-2025,CPA842,1500,apartment,1,1.1,3 BHK,1739533154,," Sobha Athena, Thanisandra","3BHK (east, west, north  facing) Around Hennur is also fine",RQA241,Pending
+14-02-2025,CPA842,1500,apartment,1,1.3,3 BHK,1739533154,," Plama Heights, Hennur",3bhk (north east west ) facing,RQA242,Pending
+14-02-2025,CPA842,2100,apartment,1.5,2,3 BHK,1739533154,, Redifice Arlington,3bhk   location preference central Bangalore,RQA243,Pending
+15-02-2025,CPA842,5500,villa,4.5,5,5BHK,1739594552,,anthelia homes thanisandra,"5BHK ( East, West, North)",RQA244,Pending
+15-02-2025,CPA842,1200,independent building,1.7,1.9,3BHK,1739594552,,yelahanka, 3BHK  (East West North) Facing ,RQA245,Pending
+15-02-2025,CPA842,1200,apartment,1,1.2,3 BHK,1739612320,,Prestige Monte Carlo,2bhk (east west north) facing,RQA246,Pending
+15-02-2025,CPA842,1700,apartment,1.7,2,3 BHK,1739612709,,Purva Venezia ,3 BHK  (east west north),RQA247,Pending
+16-02-2025,CPA842,1600,apartment,,,3 BHK,1739700041,Market Value,"Shilpa Rathna, kasthuri nagar ",3 BHK 1600Sft + east or north facing ,RQA248,Pending
+17-02-2025,CPA953,1200,apartment,,,2 BHK,1739767962,Market Value,Kanakpura road / mysore road ,"2 or 3 bhk  needed in the above areas 
+B cat developer is ok but it should be a slightly high rise ",RQA249,Pending
+17-02-2025,CPA967,1225,apartment,7500000,7800000,2 BHK,1739776557,,Pragathi Amber,2BHK on 13th floor for sale,RQA252,Pending
+18-02-2025,CPA842,2200,apartment,1.5,1.7,3.5 BHK,1739853244,,hennur,4bhk  ( east west north facing),RQA253,Pending
+18-02-2025,CPA972,1750,apartment,3,3.5,3 BHK,1739888675,,Kormangala / HSR Layout / Bellandur / Sarjapur,Require 3 BHK with 1700 - 2000 sft carpet area in Koramangla / HSR Layour / Bellandur / Sarjapur Road with a budget of 3-3.5 Cr. Flat should not be good old.,RQA254,Pending
+20-02-2025,CPA842,1900,apartment,1.2,1.45,3 BHK,1740026636,,Unitech Heritage  Yelahanka,"3BHK ( North, East or West facing ) floor rise preference middle or Higher floors ",RQA255,Pending
+20-02-2025,CPA842,1400,apartment,1,1.1,3 BHK,1740026636,,sobha moonstone,3BHK (East West or North facing),RQA256,Pending
+21-02-2025,INT015,0,apartment,,,2 BHK,1740139123,Market Value,test,asdff,RQA258,Closed
+22-02-2025,CPB012,2000,apartment,,,3.5 BHK,1740207452,Market Value,Malleshwaram,"Client Requirment:- 3-3.5BHK apartment in radius of 5-8kms from Malleshwaram(Max 30mins drive) . Very particular about having it in a society where they are only max of 15-20 apartments (Boutique) . Budget :-5-5.5Cr 
+Ready for Site visit next week 
+Basic Vastu is a must",RQA259,Pending
+22-02-2025,CPA607,3973,apartment,,,,1740216701,Market Value,Pursuit of a Radical Rhapsody @ Total Environment,"Pursuit of a Radical Rhapsody @ Total Environment - T6 - 3973 Sqft- Preferred floor is 26 - West facing - Market rate.
+
+",RQA260,Pending
+22-02-2025,CPA047,1012,apartment,,,2 BHK,1740229425,Market Value,"Sobha dream acres , Panathur ","2bhk in new towers or unused 
+North or east facing 
+2 units ",RQA261,Pending
+22-02-2025,CPA981,1500,plot,,,,1740229697,Market Value,Adarsh Savana,East or west facing 1500-2000sqft,RQA262,Pending
+22-02-2025,CPB022,4000,commercial building,,,Commercial Building,1740232537,Market Value,commercial,Commercial Building with Good Rental Required in Bangalore North and CBD Areas,RQA263,Pending
+22-02-2025,CPA453,2400,plot,,,,1740232627,Market Value,Embassy springs,2000sft to 3000sft plot Requirement in Embassy springs,RQA264,Pending
+24-02-2025,CPA065,1780,apartment,20000000,22500000,3 BHK,1740384856,,Builder floor ,3 Bhk with 3 bathroom 1780 sqft ,RQA265,Pending
+03-12-2024,CPA503,0,,,,2 bhk,0,Market Value,renaissance park,,RQB001,Pending
+03-12-2024,CPA496,0,indipendent building,2,2,3 bhk,0,,Shakar Nagar,,RQB002,Pending
+03-12-2024,CPA105,0,Apartment,2.5,2.8,3 bhk,0,,Prestige ivy terrace,,RQB003,Pending
+03-12-2024,CPA105,0,Apartment,2.5,2.8,3 bhk,0,,prestige jate pavalion,,RQB004,Pending
+03-12-2024,CPA105,0,Apartment,2.5,2.8,3 bhk,0,,Assetz east point,,RQB005,Pending
+04-12-2024,CPA100,0,Apartment,,,4 BHK,0,Market Value,Shriram Southern Crest,,RQB006,Pending
+04-12-2024,CPA100,0,Apartment,,,4 BHK,0,Market Value,Prestige Falcon City,,RQB007,Pending
+04-12-2024,CPA438,0,Apartment,,,3 BHK,0,Market Value,Adarsh Stratus,,RQB008,Pending
+04-12-2024,CPA438,0,Apartment,,,3 BHK,0,Market Value,Total Environment: learning to Fly,,RQB009,Pending
+04-12-2024,CPA438,0,Apartment,,,3 BHK,0,Market Value,DNR Reflection,,RQB010,Pending
+04-12-2024,CPA481,0,Apartment,4,4,3 BHK,0,,Brigade Exotica,,RQB011,Pending
+04-12-2024,CPA502,1500,Apartment,1.8,1.8,3 BHK,0,,Prestige City,10-20 Floor,RQB012,Pending
+04-12-2024,CPA496,0,Independent Building,2,2,,0,,Independent House in Sahakar Nagar,,RQB013,Pending
+04-12-2024,CPA413,0,Apartment,1.4,1.5,2 BHK,0,,Prestige Misty Water,,RQB014,Pending
+05-12-2024,CPA082,0,Apartment,,,1 BHK,0,Market Value,Raheja Viveria,either phase 1 or 2,RQB019,Pending
+05-12-2024,CPA100,0,Apartment,,,4 BHK,0,Market Value,Shriram Southern Cres,,RQB020,Pending
+05-12-2024,CPA100,0,Apartment,,,4 BHk,0,Market Value,Prestige Falcon City,,RQB021,Pending
+05-12-2024,CPA413,0,Apartment,1.4,1.5,2 BHK,0,,Prestige Misty water,,RQB022,Pending
+05-12-2024,CPA002,0,Apartment,2.5,2.5,3 BHK,0,,Brigade lakefront ,,RQB023,Pending
+05-12-2024,CPA113,1500,Apartment,2,2,3 BHK,0,,Brigade laguna,Brigade laguna 3bhk 1500-1600 sqft  2cr,RQB024,Pending
+05-12-2024,CPA113,0,Apartment,2,2,,0,,Adarsh crest  ,Higher Floors,RQB025,Pending
+05-12-2024,CPA113,0,Row House,,,,0,Market Value,Sobha victoria park row house,Sobha victoria park row house requirements,RQB026,Pending
+05-12-2024,CPA082,0,Apartment,,,1 BHK,0,Market Value,Raheja viveria,client is looking for 1 bhk in Raheja viveria....either in phase 1 or 2 will do...,RQB027,Pending
+05-12-2024,CPA622,0,Apartment,,,3 BHK,0,Market Value,Pretige Green Gable,,RQB029,Pending
+05-12-2024,CPA622,0,Apartment,,,3 BHK,0,Market Value,Soul Space Arista,,RQB030,Pending
+07-12-2024,CPA055,0,demolised buiding,,,,0,Market Value,koramangaa,"7000 -10000 sqft, 25ft road",RQB031,Pending
+07-12-2024,CPA415,0,Apartment,2.5,2.5,3 BHK,0,,CV Raman area,,RQB032,Pending
+08-12-2024,CPA274,0,Apartment,1.4,1.4,3 BHK,0,,Bannerghatta rd,,RQB033,Pending
+08-12-2024,CPA274,0,Apartment,1.5,1.5,3 BHK,0,,JP Nagar,,RQB034,Pending
+08-12-2024,CPA274,0,Apartment,1.5,1.5,3 BHK,0,,Akshay Nagar,,RQB035,Pending
+09-12-2024,CPA506,0,villa,2.5,2.5,3 BHK,0,,Sobha Emerald,,RQB036,Pending
+09-12-2024,CPA496,0,villa,2.3,2.3,3 BHk,0,,Sobha Emerald,Phase 1 in Jakkur,RQB037,Pending
+09-12-2024,CPA103,0,Independent Building,2.5,2.6,3 BHk,0,,JP Nagar,"3 bhk for owner stay should be there
+And rest individual floors - for rental income
+",RQB038,Pending
+09-12-2024,CPA103,0,Independent Building,2.5,2.6,,0,,Madiwala,"3 bhk for owner stay should be there
+And rest individual floors - for rental income
+",RQB039,Pending
+09-12-2024,CPA103,0,Independent Building,2.5,2.6,,0,,Bommanalli,"3 bhk for owner stay should be there
+And rest individual floors - for rental income
+",RQB040,Pending
+09-12-2024,CPA103,0,Commercial site,,,,0,Market Value,JP Nagar,"5th phase or 6th phase
+   Near to bar and restaurants lane
+Upto 40k/sq.ft also fine",RQB041,Pending
+09-12-2024,CPA274,0,Apartment,,,4 BHK,0,Market Value,Sobha Royal Pavillion,4 BHK Inside Facing,RQB042,Pending
+09-12-2024,CPA113,0,Apartment,1.65,1.65,3 BHK,0,,Century Breez,Century breeze airport Road 3bhk 1.65 cr,RQB043,Pending
+09-12-2024,CPA577,0,Apartment,,,3 BHK,0,Market Value,Assetz Canvas & Cove,3bhk. 1000-1100 Carpet area required. No ground floor. Please let me know,RQB044,Pending
+09-12-2024,CPA577,0,Apartment,,,3 BHK,0,Market Value,Prestige Song of South,3bhk. 1000-1100 Carpet area required. No ground floor. Please let me know,RQB045,Pending
+09-12-2024,CPA071,0,Apartment,1.8,1.8,3 BHK,0,,Malleshwaram,"3 bhk apartment in Malleshwaram Old apartments are fine, should have a lift. Facing - except south any facing Budget - max 1.8 cr",RQB046,Pending
+09-12-2024,CPA071,2400,Plot,1.8,1.8,,0,,Brigade Neem Groove,"60x40 plot at Brigade Neem Groove in Brigade Orchards, Devanahalli.",RQB047,Pending
+09-12-2024,INT006,0,Apartment,15,15,4 BHK,0,,Peninsula heights,3 or 4 BHK upto 15 cr,RQB048,Pending
+10-12-2024,CPA125,0,Apartment,,,3 BHK,0,Market Value,Prestige Sunrise Park,"3 BHK in Prestige sunrise park , electronic city , as per marke",RQB049,Pending
+10-12-2024,INT001,0,Apartment,,,3 BHK,0,Market Value,Electronic City,,RQB050,Pending
+10-12-2024,CPA537,0,Apartment,,,3 BHK,0,Market Value,Bollineni Silas,,RQB051,Closed
+10-12-2024,CPA082,0,Apartment,,,4 BHK,0,Market Value,Prestige Shantiniethan,"4 BHK , higher foor",RQB052,Pending
+11-12-2024,CPA603,0,Apartment,,,3 BHK,0,Market Value,Sumadhura Folium,,RQB053,Pending
+11-12-2024,CPA003,0,Apartment,,,3 BHK,0,Market Value,Chatanya Samarth,,RQB054,Pending
+11-12-2024,CPA413,0,Apartment,,,2.5 BHK,0,Market Value,Nikoo Homes 2,,RQB056,Pending
+11-12-2024,CPA413,0,Apartment,,,2.5 BHK,0,Market Value,Nikoo Homes 4,,RQB057,Pending
+11-12-2024,CPA026,0,Apartment,,,3 BHK,0,Market Value,Tata Promont ,,RQB058,Pending
+11-12-2024,CPA595,0,Apartment,3,4,3 BHK,0,,JRC Palladio,,RQB059,Pending
+11-12-2024,CPA595,0,Apartment,4,4,3 BHK,0,,SNN Clermont,,RQB060,Pending
+11-12-2024,CPA036,0,Apartment,,,3.5 BHK,0,Market Value,L&T Raintree Boulevard,,RQB061,Pending
+11-12-2024,CPA036,2500,Plot,,,,0,Market Value,Plot Before Airprot toll,Plots 2000 to 2400 Sft Before Airport toll North or East facing .,RQB062,Pending
+11-12-2024,CPA036,0,Apartment,1.2,1.3,2 BHK,0,,Nikoo 2,,RQB063,Pending
+11-12-2024,CPA481,0,Apartment,5,5,,0,,Prestige Woodside,,RQB064,Pending
+11-12-2024,CPA125,0,Apartment,,,3 BHK,0,Market Value,Prestige sunrise park,,RQB065,Pending
+12-12-2024,CPA136,0,villa,2,2,,0,,marathalli,"Independent building, or villa
+Near balagere road, varthur, gunjur Marathahalli locality",RQB067,Pending
+12-12-2024,CPA010,0,Apartment,2,2,,0,,Prestige Song of South,,RQB068,Pending
+17-12-2024,CPA379,2500,Apartment,4,4,,0,,Mantri Espana,2500 plus sqft at mantri Espana or sobha projects at bellandur 4 cr budget,RQB070,Pending
+19-12-2024,CPA632,6000,Plot,,,,0,Market Value,Sarjapur,Let me know in 6K price also .,RQB071,Pending
+19-12-2024,CPA379,2200,Apartment,4,4,3 BHK,0,,Sarjapur,"3bhk Appartment near Sarjapur, Bannerghatta 2200+Or 3 plus servent or study ",RQB072,Pending
+19-12-2024,CPA496,0,Independent Building,1.6,1.6,,0,,  RR Nagar,,RQB073,Pending
+20-12-2024,CPA413,0,villa,7.5,7.5,,0,,Prestige Ozone,Type A villa,RQB074,Pending
+21-12-2024,CPA632,0,Apartment,2.5,2.5,4 BHK,0,,North,"North Bengaluru 
+4BHK, 4.5 BHK and 2.5cr budget",RQB076,Pending
+23-12-2024,CPA576,0,Apartment,,,3 BHK,0,Market Value,Arvind oasis,My client is looking 3bhk in Arvind oasis to buy she wants upar floor North or East facing ,RQB077,Pending
+23-12-2024,CPA603,1200,Apartment,,,2 BHK,0,Market Value,prestige lakeside habitat,"2 bhk 1200sqft+
+nort and east facing
+5+ floor anything available",RQB081,Pending
+23-12-2024,CPA103,0,Apartment,0.6,0.65,2 BHK,0,,"Padmanabhanagar, RR nagar, Hoskerehalli ","Required gud 2bhk flats in following area in budget 60-65L max :
+Padmanabhanagar
+RR nagar 
+Hoskerehalli 
+South Bangalore",RQB083,Pending
+23-12-2024,CPA632,0,Apartment,2.5,2.5,4.5 BHK,0,,North Bengaluru,"North Bengaluru 
+4BHK, 4.5 BHK and 2.5cr budget",RQB084,Pending
+23-12-2024,CPA634,0,Apartment,,,,0,Market Value,PURVA PARK,,RQB085,Pending
+23-12-2024,CPA225,3600,Penthouse,,,,0,Market Value,Vaswani’s reserve,,RQB086,Pending
+02-01-2025,CPA516,0,Independent Building,1.5,1.5,,0,,"North Bengaluru, Thanisandra",independent house North Bangalore Thanisandra main road Budget 1.5 cr,RQB087,Pending
+02-01-2025,CPA664,0,Apartment,3.5,4,4 BHK,0,,Assetz Marq,want a 4bhk in Assetz marq 2.0 tower J or L,RQB088,Pending
+02-01-2025,CPA025,0,Apartment,,,3.5 BHK,0,Market Value,Prestige Waterford,"3.5bhk tower 3 or 4 
+Pool facing 
+Above 3rd floor 
+Any door facing ",RQB089,Pending
+02-01-2025,CPA025,0,Apartment,,,4.5 BHK,0,Market Value,Prestige Waterford,"4.5bhk tower 6 
+Any unit 
+Above 3rd floor 
+Any door facing Full chq payment 
+Customer will take loan on sale agreement value 75% 
+
+ 
+",RQB090,Pending
+02-01-2025,CPA496,0,Independent Building,1.5,1.5,,0,,yeshwantpur ,30×40 plots are independent house in yeshwantpur budget 1.5,RQB091,Pending
+03-01-2025,CPA113,0,Apartment,4,6,4-5 BHK,0,,SNN Clermont,"Lower floors 
+Budget-4-6 cr
+Project 
+SNN Clermont 
+Godrej platinum 
+Sobha HRC Prestine",RQB092,Pending
+03-01-2025,CPA113,0,Apartment,4,6,4-5 BHK,0,,Godrej platinum,"Lower floors 
+Budget-4-6 cr
+Project 
+SNN Clermont 
+Godrej platinum 
+Sobha HRC Prestine",RQB093,Pending
+03-01-2025,CPA113,0,Apartment,4,6,4-5 BHK,0,,Sobha HRC Prestine,"Lower floors 
+Budget-4-6 cr
+Project 
+SNN Clermont 
+Godrej platinum 
+Sobha HRC Prestine",RQB094,Pending
+14-01-2025,CPA630,0,Apartment,1.8,1.8,3 BHK,0,,"frazer town,cooke town,jay mahal or benson town area",,RQB095,
+14-01-2025,CPA768,0,Apartment,,,3 BHK,0,Market Value,Sobha City Paradise tower 2,3bhk large,RQB096,
+15-01-2025,CPA080,0,Apartment,,,2 BHK,0,Market Value,Nikoo Homes 2,2 BHK in Nikoo Homes - Ready to move | North or East Facing,RQB100,
+15-01-2025,CPA080,3000,Independent Building,7,7,,0,Market Value,Independent Bungalow,Independent Bungalow on Hennur Road or KR Puram - No Gated Community,RQB101,
+15-01-2025,CPA239,0,Apartment,,,3 BHK,0,Market Value,Prestige Song of South,,RQB102,
+15-01-2025,CPA008,0,,10,10,4 BHK,0,,Cooketown ,,RQB105,
+15-01-2025,CPA008,0,Apartment,,,3 BHK,0,Market Value,Sobha Palladian,,RQB106,
+15-01-2025,CPA017,0,Apartment,,,3 BHK,0,Market Value,Sobha Palm Court,,RQB107,
+15-01-2025,CPA017,0,Apartment,,,2 BHK,0,Market Value,Adarsh Crest,,RQB108,
+15-01-2025,CPA017,4000,Plot,,,,0,Market Value,Adarsh Savana,,RQB109,
+15-01-2025,CPA263,1500,Apartment,1.7,1.7,3 BHK,0,,Near Marathahalli or Whitefield,"Property Type: 3 BHK Apartment
+Preferred Area: Near Marathahalli or Whitefield
+Status: Ready to Move In
+Budget: ₹1.7 Cr
+Minimum SBUA: 1500+ sqft",RQB110,
+15-01-2025,CPA017,0,Apartment,,,3 BHK,0,Market Value,Sumadhura Folium,,RQB111,
+16-01-2025,CPA722,1700,Apartment,,,3 BHK,0,Market Value,Godrej Aqua,East/ North Facing,RQB112,
+16-01-2025,CPA722,1700,Apartment,,,3 BHK,0,Market Value,Godrej Aqua,East/ North Facing,RQB113,
+16-01-2025,CPA185,0,Apartment,2,2,3 BHK,0,,Brigade Laguna,,RQB114,
+16-01-2025,CPA329,4000,Apartment,9,9,Duplex Unit,0,,TE Windmills Of Your Mind / Pursuit of a Radical Rhapsody,,RQB115,
+16-01-2025,CPA016,4000,Plot,,,,0,Market Value,Century Artizan ,,RQB116,
+16-01-2025,CPA016,4000,Plot,,,,0,Market Value,Jade garden,,RQB117,
+16-01-2025,CPA698,0,apartment,1,1,3BHK,0,,Godrej Anand,east facing,RQB118,
+16-01-2025,CPA551,0,Apartment,,,3-3.5,0,Market Value,Prestige Shantinikethan,,RQB119,
+16-01-2025,CPA551,0,Apartment,,,3-3.5,0,Market Value,Brigade Lakefront,,RQB120,
+16-01-2025,CPA551,0,Apartment,,,3-3.5,0,Market Value,Prestige Waterford,,RQB121,
+17-01-2025,CPA459,0,,1.2,1.2,,0,,"HSR, Kormangala",,RQB124,
+18-01-2025,CPA584,0,Apartment,,,4 BHK,0,Market Value,Pramuk M M MERIDIAN,JAYANAGAR 7th Block ,RQB125,
+18-01-2025,CPA584,2000,Apartment,,,,0,Market Value,JAYANAGAR/ Jpnagar & Banashankari ,"North Or East 
+Gated community Or Individual",RQB126,
+18-01-2025,CPA584,0,Apartment,,,2 BHK and 3 BHK,0,Market Value,"Suguna ""PRISTINE SQUARE""","RRNAGAR Kempegowda Road 
+Near Shakti Hills & Shenmukha Temple ",RQB127,
+18-01-2025,CPA089,1500,Apartment,,,3 BHK,0,Market Value,bellandur to sarjapur road,near Decathlon. RTMI.,RQB128,
+19-01-2025,CPA949,0,Villa,6.5,6.5,,0,,Hopefarm to Channasandra Rd,RTMI,RQB129,
+19-01-2025,CPA949,25000,Villa,10,10,,0,,Electronic City,RTMI,RQB130,
+19-01-2025,CPA595,0,Apartment,,,3 BHK,0,Market Value,"House of Hiranandani, Bannerghatta ",3 or 4 BHK,RQB131,
+21-01-2025,CPA759,0,Apartment,1.4,1.5,2 BHK,0,,purva fountain square,,RQB132,
+22-01-2025,CPA759,0,Apartment,1.4,1.5,2 BHK,0,,SOBHA SILICON OASIS,,RQB133,
+21-01-2025,CPA415,0,Villa,4.5,4.5,3 BHK,0,,Prestige Mayberry,,RQB134,
+22-01-2025,CPA759,1200,plot,,,,0,Market Value,prestige park drive ,immediate,RQB135,
+22-01-2025,CPA765,0,Commercial Building,15,20,,0,,"kormangala, JP Nagar",,RQB136,
+22-01-2025,CPA765,3000,Apartment,7.1,8,3 BHK,0,,Richmond Town,,RQB137,
+22-01-2025,CPA017,0,Apartment,,,3 BHK,0,Market Value,Adarsh crest  ,,RQB138,
+22-01-2025,CPA017,0,Apartment,,,3 BHK,0,Market Value,Sobha Palm Court,,RQB139,
+22-01-2025,CPA035,0,Apartment,,,3 BHK,0,Market Value,Prestige Jindal City,,RQB140,Closed
+22-01-2025,CPA584,0,Apartment,,,3BHK,0,Market Value,Prestige Westwood,need 3 TOILETS,RQB142,
+23-01-2025,CPA698,0,Apartment,,,3BHK,0,Market Value,prestige green gables,3 toilets above 10th floor,RQB143,
+23-01-2025,CPA698,0,Apartment,,,3BHK,0,Market Value,sattva luxuria,above 5 th floor,RQB144,
+23-01-2025,CPA513,2400,Plot,,,,0,Market Value,Adarsh Savana,,RQB145,
+27-01-2025,CPA003,0,Villa,,,4 BHK,0,Market Value,Chaitanya Smaran ,,RQB146,
+27-01-2025,CPA003,0,Villa,,,4 BHK,0,Market Value, Adarsh Palm Retreat,,RQB147,
+28-01-2025,CPA197,0,Apartment,,,,0,Market Value,Sobha ultima,,RQB148,
+28-01-2025,CPA197,0,Apartment,,,,0,Market Value,Sobha zircon,,RQB149,
+28-01-2025,CPA197,0,Apartment,,,,0,Market Value,Sobha malachite,,RQB150,
+28-01-2025,CPA197,0,Apartment,,,,0,Market Value,Sobha amber,,RQB151,
+28-01-2025,CPA197,0,Apartment,,,,0,Market Value,Escencia,,RQB152,
+28-01-2025,CPA197,0,Apartment,,,,0,Market Value,Garden enclave,,RQB153,
+28-01-2025,CPA197,0,Apartment,,,,0,Market Value,Crown aura,,RQB154,
+28-01-2025,CPA197,0,Apartment,,,,0,Market Value,Legacy dimora,,RQB155,
+28-01-2025,CPA197,0,Apartment,,,,0,Market Value,Renaissance extotica,,RQB156,
+28-01-2025,CPA807,0,,4,4,,0,,"sarjapur,bellandur,harlur",,RQB157,
+29-01-2025,CPA603,0,Apartment,1.6,1.6,,0,,DNR Arista,,RQB158,
+30-01-2025,CPA922,0,Apartment,,,2 BHK,0,Market Value,Prestige Jindal City,,RQB159,
+31-01-2025,CPA727,0,Apartment,,,4 BHK,0,Market Value,Sobha ROyal Pavillion,,RQB160,
+31-01-2025,CPA695,0,Apartment,,,3 BHK,0,Market Value,Prestige Park Groove,,RQB161,
+31-01-2025,CPA695,0,Apartment,,,3 BHK,0,Market Value,prestige leela residency,,RQB162,
+31-01-2025,CPA695,0,Apartment,,,4 BHK,0,Market Value,Prestige Waterford ,1 and 4 BHK needed,RQB163,
+01-02-2025,CPA826,0,Apartment,3,3,,0,,house of hiranandani,need around 3 cr in devanhalli,RQB164,
+01-02-2025,CPA826,4000,plot,,,,0,Market Value,Embassy spring,,RQB165,
+01-02-2025,CPA697,0,Apartment,4,4,4 BHK,0,,shobha indraprastha,North/East facing door and East/west facing balcony,RQB166,
+03-02-2025,CPA695,0,Apartment,0.7,0.7,1 BHK,0,,"Whitefield,Bellandur, Martahalli, Sarjapura Road", Higher Floor,RQB167,
+03-02-2025,CPA870,0,Apartment,2,2,3 BHK,0,,"Brigade metropolis, Brigade lakefront, Durga petals",2-3 BHK higher floor,RQB168,
+03-02-2025,CPA049,0,Apartment,,,3 BHK,0,Market Value,The Five Summits address,whitefield,RQB169,
+04-02-2025,CPA581,40000,Commercial Building,,,,0,Market Value,Within 20-25km of MG Road,Bommasandra,RQB170,
+04-02-2025,CPA256,1500,Plot,,,,0,Market Value,Manyata Morefields,Sarjapura Road,RQB171,
+04-02-2025,CPA403,0,Plot,,,,0,Market Value,"New Airport Road, Yelahanka",,RQB172,
+04-02-2025,CPA274,6000,Plot,2,3,,0,,"Kaggadasapura, Bidralli, Kr puram","Kaggadasapura, Bidralli, Kr puram",RQB173,
+06-02-2025,CPA017,0,Apartment,,,4 BHK,0,Market Value,Assetz Bloom & Dell,,RQB174,
+06-02-2025,CPA017,0,Apartment,,,3 BHK,0,Market Value,Sumadhura Folium,,RQB175,
+06-02-2025,CPA017,0,Apartment,,,3 BHK,0,Market Value,Sobha Palm Court,,RQB176,
+06-02-2025,CPA017,0,Plot,,,,0,Market Value,TATA Swaram,,RQB177,
+07-02-2025,CPA140,0,Apartment,,,4 BHK,0,Market Value,Sobha Royal Pavillion,South-East facing door,RQB178,
+07-02-2025,CPA085,0,Villa,,,,0,Market Value,Adarsh Palm Retreat,,RQB179,
+07-02-2025,CPA449,0,Apartment,,,3 BHK,0,Market Value,Hiranandani Glen Classic,,RQB180,
+08-02-2025,CPA866,0,Plot,,,,0,Market Value,semi commercial plot ,"jaynagar Preferred in 4th, 5th or 4T block 
+Budget - 30,000 per sqft",RQB181,
+08-02-2025,CPA767,0,Apartment,,,3 Bhk,0,Market Value,Regency La  Majada,2 or 3 Bhk in hennur,RQB182,
+10-02-2025,CPA807,0,Apartment,,,3 BHK,0,Market Value,Snn raj eternia,2 or 3 BHK IN NEW TOWERS ,RQB183,
+10-02-2025,CPA690,1200,Plot,,,,0,Market Value,Prestige City Plot,1200 - 1500 Sqft plot in Prestige city,RQB184,
+10-02-2025,CPA695,1841,Apartment,1.2,1.2,3 BHK,0,,Purva Highland,east facing 5-10 floor,RQB185,
+11-02-2025,CPA899,15000,Commercial Building,,,,0,Market Value,Commercial building,10-15000sqft,RQB186,
+12-02-2025,CPA607,0,Apartment,,,2 BHK,0,Market Value,Republic of whitefield,,RQB187,
+12-02-2025,CPA607,0,Apartment,,,3 BHK,0,Market Value,Republic of whitefield,,RQB188,
+12-02-2025,CPA607,0,Apartment,,,2 BHK,0,Market Value,Golden Blossom,,RQB189,
+12-02-2025,CPA695,0,Apartment,1.5,1.5,2 BHK,0,,Raheja Residency,east facing,RQB190,
+12-02-2025,CPA695,0,Apartment,1.5,1.5,2 BHK,0,,Prestige Pinewoods,east facing,RQB191,
+12-02-2025,CPA720,0,Apartment,,,1 BHK,0,Market Value,Prestige Waterford,,RQB192,
+12-02-2025,CPA690,0,Apartment,,,2 BHK,0,Market Value,Sattva Laurel Heights,,RQB193,
+12-02-2025,CPA720,0,Villa,,,,0,Market Value,Adarsh Pam Retreat,,RQB194,
+13-02-2025,CPA610,0,Plot,,,,0,Market Value,Century Sessions,,RQB195,
+13-02-2025,CPA585,0,Apartment,2.5,2.5,3 BHK,0,,Capstone Flowing tree,"I need a 3bhk in Capstone Flowing tree Yelahanka new town, should have beautiful lake view, Budget. 2.50Cr. 
+
+anything above 7th floor.",RQB196,
+15-02-2025,CPA056,0,Apartment,3.5,3.5,3.5 BHK,0,,Prestige Waterford,,RQB197,
+15-02-2025,CPA056,0,Apartment,,,3 BHK,0,Market Value,Prestige Waterford,,RQB198,
+15-02-2025,CPA481,0,Apartment,,,,0,Market Value,Prestige St john's woods,"Tower - Aspen block, Hazel Block, Olive Block
+
+2200+ Sqft
+",RQB199,
+15-02-2025,CPA702,2000,Plot,,,,0,Market Value,Adarsh Savana,"Adarsh savana 
+1500-2000 sqft Resale plots required.
+2400 sqft Resale unit required",RQB200,
+15-02-2025,CPA637,0,Apartment,3,3,3 BHK,0,,Prestige Spencer Heights,,RQB202,
+15-02-2025,CPA637,0,Apartment,3,3,3 BHK,0,,Prestige Woodland Park,,RQB203,
+15-02-2025,CPA719,0,Apartment,,,,0,Market Value,Phoenix kessaku,,RQB204,
+15-02-2025,CPA776,0,Apartment,,,,0,Market Value,Vaswani Pinnacle,,RQB205,
+09-12-2024,INT001,0,apartment,0,15,4 BHK,1733732492,, Peninsula heights,3 or 4 BHK upto 15 cr,RQA117,Pending
+29-11-2024,CPA170,0,apartment,,,3 BHK,1732905333,Market Value,Rohan Upavan,"3 bhk 
+Facing East , North
+",RQA098,Pending
+29-11-2024,INT001,2400,plot,,,,1732878996,Market Value,Brigade owsis,"Plots , 2400 sqft ",RQA091,Pending
+06-12-2024,CPA409,1800,apartment,,,3 BHK,1733483850,Market Value,Adarsh park heights ,3 bhk east facing phase 1,RQA111,Pending
+06-12-2024,CPA409,1200,apartment,,,2 BHK,1733461756,Market Value,Prestige palms ,Need 2 bhk with 2 balcony ,RQA105,Pending
+17-12-2024,CPA058,0,apartment,,,2 BHK,1734429093,Market Value,"Brookfield, ITPL, Whitefield","2bhk - Good community - Max 10yrs old, Tyre A builders",RQA132,Pending
+30-11-2024,CPA080,1299,apartment,,,2.5 BHK,1732943963,Market Value,Prestige Misty Waters ,2.5 BHK ,RQA099,Pending
+11-12-2024,CPA539,0,apartment,,,4 BHK,1733895133,Market Value,Prestige shantiniketan ,"4BHK, higher floor ",RQA122,Pending
+11-12-2024,CPA539,0,apartment,,,4 BHK,1733894930,Market Value,Prestige shantiniketan ,"4BHK , higher floor ",RQA121,Pending
+29-11-2024,CPA256,1700,apartment,2.1,2.2,3 BHK,1732881589,,sarjapur road,Ready to move or tenanted 3bhk-3 baths from reputed builder before decathlon flyover,RQA094,Pending
+14-12-2024,CPA363,1350,apartment,2,2.2,2.5 BHK,1734182395,,prestige westwood,2.5 bhk,RQA128,Pending
+03-12-2024,CPA409,2300,apartment,,,4 BHK,1733218405,Market Value,Sarjapur road and Whitefield,4 bhk vasthu unit ,RQA101,Pending
+15-12-2024,INT003,0,villa,,,4BHK,1734268540,Market Value,Woodsong Around the Mangoes,Villa,RQA131,Pending
+09-12-2024,CPA580,0,villa,,,4BHK,1733722772,Market Value,Prestige Golfshire villas,Large villa ,RQA116,Pending
+29-11-2024,INT001,0,apartment,0,2,3 BHK,1732879078,,Prestige Park Grove,3 bhk ,RQA092,Pending
+04-12-2024,INT001,0,apartment,2.4,2.6,3 BHK,1733299966,,Brigade Lakefront,3BHK 2.5cr,RQA104,Pending
+04-12-2024,CPA256,0,apartment,,,,1733298784,Market Value,prestige exotica,3/4 bhk - Budget no constraints. Price should be in line with ongoing market price.,RQA102,Pending
+08-12-2024,INT002,0,apartment,,,3.5 BHK,1733642853,Market Value,Prestige Waterford,,RQA115,Pending
+29-11-2024,CPA274,1775,apartment,2.6,2.85,3 BHK,1732892469,,Prestige water ford,"3 BHK 1775sft middle floor 
+",RQA097,Pending
+29-11-2024,CPA170,1400,apartment,1,1.15,3 BHK,1732884567,,Bannerghatta Road/ Electronic City Phase 1 or 2,"Bedroom -3 
+Facing - West, North ,East
+SBA - 1400 sft above 
+Middle Floor 
+Age of Building - 5 years 
+Budget - 1.10 cr
+Going for loan 75%
+
+",RQA096,Pending
+11-12-2024,CPA603,2229,apartment,,,4 BHK,1733926487,Market Value,Assetz Marq ,4bhk 1-5th floor,RQA124,Pending
+07-12-2024,CPA570,0,apartment,,,3 BHK,1733579089,Market Value,Republic of Whitefield,3 BHK in Republic of Whitefield,RQA113,Pending
+12-12-2024,CPA579,0,apartment,,,,1734007487,Market Value,godrej air,4 bhk higher,RQA125,Pending
+23-12-2024,CPA638,3000,apartment,4,4,3.5 BHK,1734941050,,looking to buy a flat in a society close to MG road,"Budget of 4 Cr
+3.5 or 4.5 BHK
+upto 3000 sqft
+should be between the 1st and 6th floor
+preferred ample greenery
+should be close to MG road or Indiranagr
+must have a servants quarters
+must be part pf a community/society with basic ammenities
+",RQA140,Pending
+19-12-2024,CPA545,0,plot,,,,1734598454,Market Value,North,Want a plot of 2400 sqft,RQA133,Pending
+28-11-2024,INT001,3000,villa,,,4BHK,1732798297,Market Value,HSR Layout,"HSR Layout 4 BHK, Villa, Penthouse",RQA086,Pending
+06-12-2024,CPA584,4000,bungalow,1,1.5,4BHK,1733480373,,BASAVANGUDI ,Required 3/4bhk for RENT,RQA110,Pending
+28-11-2024,INT002,0,apartment,0,2.15,3 BHK,1732801883,,Sobha Royal Pavillion,3 BHK in Sobha Royal Pavillion 2.15 Cr Budget,RQA088,Pending
+04-12-2024,CPA256,0,apartment,,,,1733298784,Market Value,Prestige kenilworth,3/4 bhk - Budget no constraints. Price should be in line with ongoing market price.,RQA103,Pending
