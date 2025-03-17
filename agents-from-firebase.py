@@ -9,9 +9,10 @@ from dotenv import load_dotenv
 import sys
 import codecs
 
+# Ensure UTF-8 output (fixes UnicodeEncodeError on Windows)
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.buffer, 'strict')
 
-# Load environment variables
+# Load environment variables from .env file
 load_dotenv()
 
 def initialize_firebase():
@@ -61,10 +62,12 @@ def fetch_firestore_data(collection_name):
         db = firestore.client()
         collection_ref = db.collection(collection_name)
         print(f"🔍 Fetching data from Firestore collection: {collection_name}...")
-
+        docs = list(collection_ref.stream())
+        if not docs:
+            print("⚠️ No documents found in Firestore.")
+            return []
+        
         rows = []
-        docs = collection_ref.stream()  # Efficient streaming
-
         for doc in docs:
             try:
                 item = doc.to_dict()
@@ -74,11 +77,11 @@ def fetch_firestore_data(collection_name):
                 item["phonenumber"] = clean_phone_number(item.get("phonenumber", ""))
                 item["added"] = convert_unix_to_date(item.get("added"))
                 item["lastModified"] = convert_unix_to_date(item.get("lastModified"))
-                item = {k: flatten_field(v) for k, v in item.items()}
-                rows.append(item)
+                # Flatten list fields if needed
+                processed = {k: flatten_field(v) for k, v in item.items()}
+                rows.append(processed)
             except Exception as doc_error:
                 print(f"⚠️ Error processing document {doc.id}: {doc_error}")
-
         print(f"✅ Successfully fetched {len(rows)} records from Firestore.")
         return rows
     except Exception as e:
@@ -101,34 +104,34 @@ def write_to_google_sheet(data, spreadsheet_id, sheet_name):
             "token_uri": "https://oauth2.googleapis.com/token"
         }
         
-        credentials = Credentials.from_service_account_info(sheets_creds, scopes=['https://www.googleapis.com/auth/spreadsheets'])
-        gc = gspread.authorize(credentials)
+        credentials_obj = Credentials.from_service_account_info(sheets_creds, scopes=['https://www.googleapis.com/auth/spreadsheets'])
+        gc = gspread.authorize(credentials_obj)
         spreadsheet = gc.open_by_key(spreadsheet_id)
-
+        
         try:
             sheet = spreadsheet.worksheet(sheet_name)
         except gspread.exceptions.WorksheetNotFound:
             sheet = spreadsheet.add_worksheet(title=sheet_name, rows="100", cols="50")
             print(f"✅ New sheet '{sheet_name}' created.")
-
+        
         print(f"✅ Google Sheet '{sheet_name}' opened successfully.")
-
-        # **Define the Fixed Column Order**
+        
+        # Define the fixed column order
         fixed_columns = [
             "phonenumber", "cpId", "name", "extraDetails", "verified", "businessName",
             "myInventories", "areaOfOperation", "firmSize", "firmName", "lastModified",
             "notes", "blacklisted", "gstNo", "dailyCredits", "added", "admin", "kam",
             "reraId", "monthlyCredits"
         ]
-
+        
         # Ensure all data rows follow the fixed column order
         formatted_data = [[item.get(field, "") for field in fixed_columns] for item in data]
-
-        # Write headers and formatted data to Google Sheets
-        sheet.clear()
-        sheet.update("A1", [fixed_columns] + formatted_data)
         
-        print(f"✅ Data written successfully with a fixed column order.")
+        data_to_write = [fixed_columns] + formatted_data
+        sheet.clear()
+        # Use named parameters for update to avoid deprecation warnings
+        sheet.update(values=data_to_write, range_name="A1")
+        print("✅ Data written successfully with a fixed column order.")
     except Exception as e:
         print(f"❌ Error writing to Google Sheets: {e}")
 
@@ -136,14 +139,11 @@ def main():
     try:
         initialize_firebase()
         print("🔍 Firebase initialized, moving to Firestore fetch...")
-        
         collection_name = "agents"
         data = fetch_firestore_data(collection_name)
-        
         print("🔍 Firestore fetch completed, checking data...")
-        
         if data:
-            spreadsheet_id = "17_9YH7wcHHlgMmBOp50AuYR0Kx0_7-DQMoO38RBI3vg"  # Keep hardcoded if needed
+            spreadsheet_id = "17_9YH7wcHHlgMmBOp50AuYR0Kx0_7-DQMoO38RBI3vg"  # Hardcoded as needed
             sheet_name = "Sheet1"
             print(f"🔍 Writing {len(data)} records to Google Sheets...")
             write_to_google_sheet(data, spreadsheet_id, sheet_name)

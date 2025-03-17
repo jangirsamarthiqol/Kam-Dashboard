@@ -8,10 +8,11 @@ import os
 from dotenv import load_dotenv
 import sys
 import codecs
+import pandas as pd
 
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.buffer, 'strict')
 
-# Load environment variables
+# Load environment variables from .env file
 load_dotenv()
 
 # Firebase Admin SDK initialization
@@ -51,8 +52,8 @@ def get_sheets_service():
             "client_id": os.getenv("GSPREAD_CLIENT_ID"),
             "token_uri": "https://oauth2.googleapis.com/token"
         }
-        credentials = Credentials.from_service_account_info(sheets_creds, scopes=["https://www.googleapis.com/auth/spreadsheets"])
-        return build("sheets", "v4", credentials=credentials)
+        credentials_obj = Credentials.from_service_account_info(sheets_creds, scopes=["https://www.googleapis.com/auth/spreadsheets"])
+        return build("sheets", "v4", credentials=credentials_obj)
     except Exception as e:
         print(f"❌ Error initializing Google Sheets API: {e}")
         return None
@@ -69,6 +70,9 @@ def convert_unix_to_date(unix_timestamp):
 
 # Flatten values for JSON serialization
 def flatten_value(value):
+    # If the value is NaN, return an empty string (or you can return None if preferred)
+    if pd.isna(value):
+        return ""
     if isinstance(value, (dict, list)):
         return json.dumps(value, ensure_ascii=False)
     return value
@@ -87,6 +91,7 @@ def fetch_firestore_data(collection_name):
             item["id"] = doc.id  # Include Firestore Document ID
             item["added"] = convert_unix_to_date(item.get("added"))
             item["lastModified"] = convert_unix_to_date(item.get("lastModified"))
+            # Apply flatten_value to each field
             item = {k: flatten_value(v) for k, v in item.items()}
             all_fields.update(item.keys())
             rows.append(item)

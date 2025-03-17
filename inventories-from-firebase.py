@@ -9,19 +9,24 @@ import json
 import sys
 import codecs
 
+# Ensure UTF-8 output (fixes UnicodeEncodeError on Windows)
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.buffer, 'strict')
 
 # Load environment variables from .env file
 load_dotenv()
 
+# ---------------------------
 # Firebase Configuration
+# ---------------------------
 FIREBASE_PROJECT_ID = os.getenv("FIREBASE_PROJECT_ID")
 FIREBASE_PRIVATE_KEY_ID = os.getenv("FIREBASE_PRIVATE_KEY_ID")
 FIREBASE_PRIVATE_KEY = os.getenv("FIREBASE_PRIVATE_KEY", "").replace('\\n', '\n')
 FIREBASE_CLIENT_EMAIL = os.getenv("FIREBASE_CLIENT_EMAIL")
 FIREBASE_CLIENT_ID = os.getenv("FIREBASE_CLIENT_ID")
 
+# ---------------------------
 # Google Sheets Configuration
+# ---------------------------
 GSPREAD_PROJECT_ID = os.getenv("GSPREAD_PROJECT_ID")
 GSPREAD_PRIVATE_KEY_ID = os.getenv("GSPREAD_PRIVATE_KEY_ID")
 GSPREAD_PRIVATE_KEY = os.getenv("GSPREAD_PRIVATE_KEY", "").replace('\\n', '\n')
@@ -29,10 +34,14 @@ GSPREAD_CLIENT_EMAIL = os.getenv("GSPREAD_CLIENT_EMAIL")
 GSPREAD_CLIENT_ID = os.getenv("GSPREAD_CLIENT_ID")
 GOOGLE_SHEET_ID = "1o6KI4tXt5yfIOHYQ9JH9RI1NK35DKrJRPHNf0srDnuo"
 
+# ---------------------------
 # Firestore Collection Name
+# ---------------------------
 FIRESTORE_COLLECTION_NAME = "ACN123"
 
+# ---------------------------
 # Initialize Firebase Admin SDK
+# ---------------------------
 def initialize_firebase():
     try:
         cred_data = {
@@ -47,14 +56,15 @@ def initialize_firebase():
             "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
             "client_x509_cert_url": f"https://www.googleapis.com/robot/v1/metadata/x509/{FIREBASE_CLIENT_EMAIL.replace('@', '%40')}"
         }
-
         cred = credentials.Certificate(cred_data)
         firebase_admin.initialize_app(cred)
         print("✅ Firebase initialized successfully.")
     except Exception as e:
         print(f"❌ Error initializing Firebase: {e}")
 
+# ---------------------------
 # Convert Unix timestamp to readable date
+# ---------------------------
 def convert_unix_to_date(unix_timestamp):
     try:
         if not unix_timestamp or not isinstance(unix_timestamp, (int, float, str)):
@@ -64,27 +74,21 @@ def convert_unix_to_date(unix_timestamp):
         print(f"⚠️ Error converting timestamp {unix_timestamp}: {e}")
         return ""
 
+# ---------------------------
 # Fetch data from Firestore
+# ---------------------------
 def fetch_firestore_data(collection_name):
     try:
         db = firestore.client()
         print(f"🔍 Checking Firestore collection: {collection_name}")
-
-        # Check available collections
-        collections = db.collections()
-        # print("📂 Available collections in Firestore:")
-        # for collection in collections:
-        #     print(f"  - {collection.id}")
-
         collection_ref = db.collection(collection_name)
         docs = list(collection_ref.stream())
-
+        
         if not docs:
             print("⚠️ No documents found in Firestore.")
             return []
-
+        
         print(f"📄 Found {len(docs)} documents.")
-
         rows = []
         for doc in docs:
             try:
@@ -92,9 +96,7 @@ def fetch_firestore_data(collection_name):
                 if not isinstance(item, dict):
                     print(f"⚠️ Unexpected data format in document {doc.id}: {item}")
                     continue
-
-                # print(f"📜 Processing Document ID: {doc.id}")
-
+                
                 row = [
                     item.get("propertyId", ""),
                     item.get("cpCode", ""),
@@ -126,26 +128,25 @@ def fetch_firestore_data(collection_name):
                     item.get("tenanted", ""),
                     item.get("ocReceived", ""),
                     item.get("currentStatus", ""),
-                    f"{item.get('_geoloc', {}).get('lat', '')}, {item.get('_geoloc', {}).get('lng', '')}"
-                    if isinstance(item.get('_geoloc', {}), dict) else "",
+                    (f"{item.get('_geoloc', {}).get('lat', '')}, {item.get('_geoloc', {}).get('lng', '')}"
+                     if isinstance(item.get('_geoloc', {}), dict) else ""),
                     item.get("exclusive", ""),
                     item.get("exactFloor", ""),
                     item.get("eKhata", ""),
                     ", ".join(item.get("document", [])) if isinstance(item.get("document"), list) else item.get("document", "")
                 ]
                 rows.append(row)
-
             except Exception as doc_error:
                 print(f"⚠️ Error processing document {doc.id}: {doc_error}")
-
         print(f"✅ Successfully fetched {len(rows)} records from Firestore.")
         return rows
-
     except Exception as e:
         print(f"❌ Error fetching data from Firestore: {e}")
         return []
 
-# Write data to Google Sheets
+# ---------------------------
+# Write data to Google Sheets in a single batch update
+# ---------------------------
 def write_to_google_sheet(data):
     try:
         if not data:
@@ -164,11 +165,9 @@ def write_to_google_sheet(data):
             "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
             "client_x509_cert_url": f"https://www.googleapis.com/robot/v1/metadata/x509/{GSPREAD_CLIENT_EMAIL.replace('@', '%40')}"
         }
-
         scopes = ['https://www.googleapis.com/auth/spreadsheets']
-        credentials = Credentials.from_service_account_info(credentials_data, scopes=scopes)
-        gc = gspread.authorize(credentials)
-
+        credentials_obj = Credentials.from_service_account_info(credentials_data, scopes=scopes)
+        gc = gspread.authorize(credentials_obj)
         print("✅ Google Sheets API authenticated successfully.")
         
         sheet = gc.open_by_key(GOOGLE_SHEET_ID).sheet1
@@ -188,13 +187,15 @@ def write_to_google_sheet(data):
         data_to_write = [headers] + data
         sheet.clear()
         print("✅ Sheet cleared successfully.")
-        sheet.update("A1", data_to_write)
+        # Updated to use named parameters to match the new argument order
+        sheet.update(values=data_to_write, range_name="A1")
         print("✅ Data written successfully to Google Sheets.")
-
     except Exception as e:
         print(f"❌ Error writing to Google Sheets: {e}")
 
+# ---------------------------
 # Main function
+# ---------------------------
 def main():
     initialize_firebase()
     data = fetch_firestore_data(FIRESTORE_COLLECTION_NAME)
