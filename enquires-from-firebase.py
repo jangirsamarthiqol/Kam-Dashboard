@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 import sys
 import codecs
 import pandas as pd
+import numpy as np
 
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.buffer, 'strict')
 
@@ -52,7 +53,9 @@ def get_sheets_service():
             "client_id": os.getenv("GSPREAD_CLIENT_ID"),
             "token_uri": "https://oauth2.googleapis.com/token"
         }
-        credentials_obj = Credentials.from_service_account_info(sheets_creds, scopes=["https://www.googleapis.com/auth/spreadsheets"])
+        credentials_obj = Credentials.from_service_account_info(
+            sheets_creds, scopes=["https://www.googleapis.com/auth/spreadsheets"]
+        )
         return build("sheets", "v4", credentials=credentials_obj)
     except Exception as e:
         print(f"❌ Error initializing Google Sheets API: {e}")
@@ -61,19 +64,33 @@ def get_sheets_service():
 # Convert Unix timestamps to human-readable dates
 def convert_unix_to_date(unix_timestamp):
     try:
-        if not unix_timestamp or not isinstance(unix_timestamp, (int, float, str)):
+        if unix_timestamp is None:
             return ""
-        return datetime.fromtimestamp(int(unix_timestamp), tz=timezone.utc).strftime('%Y-%m-%d')
+        # If it's an array-like object, take the first element
+        if isinstance(unix_timestamp, (list, tuple, np.ndarray)):
+            if len(unix_timestamp) == 0:
+                return ""
+            unix_timestamp = unix_timestamp[0]
+        # Ensure the value is of an acceptable type
+        if not isinstance(unix_timestamp, (int, float, str)):
+            return ""
+        ts = int(unix_timestamp)
+        return datetime.fromtimestamp(ts, tz=timezone.utc).strftime('%Y-%m-%d')
     except Exception as e:
         print(f"⚠️ Error converting timestamp {unix_timestamp}: {e}")
         return ""
 
 # Flatten values for JSON serialization
 def flatten_value(value):
-    # If the value is NaN, return an empty string (or you can return None if preferred)
+    # Check if value is array-like first
+    if isinstance(value, (list, tuple, np.ndarray)):
+        if isinstance(value, np.ndarray):
+            value = value.tolist()
+        return json.dumps(value, ensure_ascii=False)
+    # Now check for NaN for scalar values
     if pd.isna(value):
         return ""
-    if isinstance(value, (dict, list)):
+    if isinstance(value, dict):
         return json.dumps(value, ensure_ascii=False)
     return value
 
@@ -114,18 +131,20 @@ def write_to_google_sheet(data, spreadsheet_id, sheet_name, all_fields):
         service = get_sheets_service()
         if not service:
             return
-        print(f"✅ Google Sheets API initialized successfully.")
+        print("✅ Google Sheets API initialized successfully.")
         headers = list(all_fields)
         formatted_data = [[item.get(field, "") for field in headers] for item in data]
         sheet_data = [headers] + formatted_data
-        service.spreadsheets().values().clear(spreadsheetId=spreadsheet_id, range=sheet_name).execute()
+        service.spreadsheets().values().clear(
+            spreadsheetId=spreadsheet_id, range=sheet_name
+        ).execute()
         service.spreadsheets().values().update(
             spreadsheetId=spreadsheet_id,
             range=sheet_name,
             valueInputOption="RAW",
             body={"values": sheet_data}
         ).execute()
-        print(f"✅ Data written successfully to Google Sheets.")
+        print("✅ Data written successfully to Google Sheets.")
     except Exception as e:
         print(f"❌ Error writing to Google Sheets: {e}")
 
