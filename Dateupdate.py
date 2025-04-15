@@ -4,9 +4,11 @@ import pandas as pd
 from datetime import datetime, timezone
 import os
 from dotenv import load_dotenv
-
+import time
+import random
 from googleapiclient.discovery import build
 from google.oauth2.service_account import Credentials
+from googleapiclient.errors import HttpError
 
 # Load environment variables from .env file (for Firebase and Sheets credentials)
 load_dotenv()
@@ -63,6 +65,29 @@ def get_sheets_service():
         return None
 
 # ---------------------------
+# Function to fetch Google Sheets data with retry logic
+# ---------------------------
+def fetch_sheet_data(sheet_service, spreadsheet_id, range_name, max_retries=5, initial_delay=1):
+    retries = 0
+    delay = initial_delay
+    
+    while retries < max_retries:
+        try:
+            result = sheet_service.spreadsheets().values().get(spreadsheetId=spreadsheet_id, range=range_name).execute()
+            return result
+        except HttpError as err:
+            if err.resp.status == 429:  # Too Many Requests
+                retries += 1
+                wait_time = delay * (2 ** retries) + random.uniform(0, 1)  # Exponential backoff with some randomness
+                print(f"Rate limit exceeded. Retrying in {wait_time:.2f} seconds... (Attempt {retries}/{max_retries})")
+                time.sleep(wait_time)
+            else:
+                print(f"HTTP error occurred: {err}")
+                break
+    print(f"Failed to fetch data after {max_retries} retries.")
+    return None
+
+# ---------------------------
 # Utility: Convert date string to Unix timestamp
 # ---------------------------
 def convert_date_to_unix(date_str):
@@ -99,16 +124,20 @@ def main():
     spreadsheet_id = "14rr4IiEfMVQ_GlzZ-90EkeVNuo4uk_HjjGf8104a3JI"
     range_name = "Sheet77!A:C"
     
-    # Fetch data from Google Sheet
-    sheet = sheets_service.spreadsheets()
-    result = sheet.values().get(spreadsheetId=spreadsheet_id, range=range_name).execute()
+    # Fetch data from Google Sheet with retry logic
+    result = fetch_sheet_data(sheets_service, spreadsheet_id, range_name)
+    
+    if not result:
+        print("Failed to fetch data from the Google Sheet.")
+        return
+
     values = result.get('values', [])
     
     if not values:
         print("No data found in the Google Sheet.")
         return
 
-    # Assume first row contains headers
+    # Proceed with the existing code...
     headers = values[0]
     data = values[1:]
     dataframe = pd.DataFrame(data, columns=headers)
@@ -122,12 +151,12 @@ def main():
     for doc in db.collection(collection_name).stream():
         existing_ids.add(doc.id)
     print(f"Found {len(existing_ids)} existing documents in collection '{collection_name}'.")
-
+    
     # Create a batch to perform multiple updates at once
     batch = db.batch()
     batch_count = 0
     batch_limit = 500  # Firestore batch limit
-
+    
     # Process each row from the Google Sheet
     for _, row in dataframe.iterrows():
         property_id = row["propertyId"]  # Field name in Google Sheet
