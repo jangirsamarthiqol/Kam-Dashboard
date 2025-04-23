@@ -175,17 +175,17 @@ scripts = {
     "Inventory": {
         "file": "inventories-from-firebase.py",
         "icon": "📦",
-        "description": "Update inventory records"
+        "description": "Sync inventory records from Firebase"
     },
     "Enquiries": {
         "file": "enquires-from-firebase.py",
         "icon": "📋",
-        "description": "Process pending enquiries"
+        "description": "Sync enquiries from Firebase"
     },
     "Database": {
         "file": "Dateupdate.py",
         "icon": "🔄",
-        "description": "Perform database updates"
+        "description": "Update Last Checked Date in Firebase"
     }
 }
 
