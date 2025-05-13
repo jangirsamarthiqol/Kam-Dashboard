@@ -1,4 +1,5 @@
 import os
+import math
 import firebase_admin
 from firebase_admin import credentials, firestore
 import gspread
@@ -184,11 +185,25 @@ def write_to_google_sheet(data):
             "eKhata", "Document"
         ]
         
+        # Prepare full payload
         data_to_write = [headers] + data
+
+        # Sanitize out any NaN or None values
+        sanitized = []
+        for row in data_to_write:
+            new_row = []
+            for cell in row:
+                if isinstance(cell, float) and math.isnan(cell):
+                    new_row.append("")
+                elif cell is None:
+                    new_row.append("")
+                else:
+                    new_row.append(cell)
+            sanitized.append(new_row)
+
         sheet.clear()
         print("✅ Sheet cleared successfully.")
-        # Updated to use named parameters to match the new argument order
-        sheet.update(values=data_to_write, range_name="A1")
+        sheet.update(values=sanitized, range_name="A1")
         print("✅ Data written successfully to Google Sheets.")
     except Exception as e:
         print(f"❌ Error writing to Google Sheets: {e}")

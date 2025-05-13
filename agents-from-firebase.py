@@ -121,7 +121,7 @@ def write_to_google_sheet(data, spreadsheet_id, sheet_name):
             "phonenumber", "cpId", "name", "extraDetails", "verified", "businessName",
             "myInventories", "areaOfOperation", "firmSize", "firmName", "lastModified",
             "notes", "blacklisted", "gstNo", "dailyCredits", "added", "admin", "kam",
-            "reraId", "monthlyCredits"
+            "reraId", "monthlyCredits","userType","trialUsed"
         ]
         
         # Ensure all data rows follow the fixed column order
