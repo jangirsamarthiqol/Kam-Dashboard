@@ -6,3 +6,10 @@ enquiry-tracking-1818988a416c.json
 masalServiceAccountKey.json
 masal-db-6cc78-aa35f0672ae1.json
 invoices
+*.pdf
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+*.xlsb
+credentials
