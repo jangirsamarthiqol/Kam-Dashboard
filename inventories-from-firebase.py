@@ -124,7 +124,11 @@ def fetch_firestore_data(collection_name):
                 item.get("exclusive", ""),
                 item.get("exactFloor", ""),
                 item.get("eKhata", ""),
-                ", ".join(item.get("document", [])) if isinstance(item.get("document"), list) else item.get("document", "")
+                ", ".join(item.get("document", [])) if isinstance(item.get("document"), list) else item.get("document", ""),
+                item.get("photo", ""),
+                item.get("video", ""),
+                item.get("document", ""),
+
             ]
             rows.append(row)
         print(f"✅ Successfully fetched {len(rows)} records from Firestore.")
@@ -166,7 +170,7 @@ def write_to_google_sheet(data):
             "Drive link for more info","Building Khata","Land Khata","Building Age",
             "Age of Inventory","Age of Status","Status","Tenanted or Not",
             "OC Received or not","Current Status","Coordinates","Exclusive","Exact Floor",
-            "eKhata","Document"
+            "eKhata","Document","Photo","Video","Document"
         ]
         payload = [headers] + data
         # Sanitize
