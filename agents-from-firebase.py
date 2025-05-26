@@ -74,16 +74,29 @@ def fetch_firestore_data(collection_name):
                 if not isinstance(item, dict):
                     print(f"⚠️ Unexpected data format in document {doc.id}: {item}")
                     continue
+
+                # Clean and convert existing fields
                 item["phonenumber"] = clean_phone_number(item.get("phonenumber", ""))
                 item["added"] = convert_unix_to_date(item.get("added"))
                 item["lastModified"] = convert_unix_to_date(item.get("lastModified"))
+
+                # New: compute trialEnd based on planExpiry & userType
+                plan_expiry = item.get("planExpiry")
+                if item.get("userType") in ("trial", "premium") and plan_expiry:
+                    item["trialEnd"] = convert_unix_to_date(plan_expiry)
+                else:
+                    item["trialEnd"] = ""
+
                 # Flatten list fields if needed
                 processed = {k: flatten_field(v) for k, v in item.items()}
                 rows.append(processed)
+
             except Exception as doc_error:
                 print(f"⚠️ Error processing document {doc.id}: {doc_error}")
+
         print(f"✅ Successfully fetched {len(rows)} records from Firestore.")
         return rows
+
     except Exception as e:
         print(f"❌ Error fetching data from Firestore: {e}")
         return []
@@ -104,7 +117,10 @@ def write_to_google_sheet(data, spreadsheet_id, sheet_name):
             "token_uri": "https://oauth2.googleapis.com/token"
         }
         
-        credentials_obj = Credentials.from_service_account_info(sheets_creds, scopes=['https://www.googleapis.com/auth/spreadsheets'])
+        credentials_obj = Credentials.from_service_account_info(
+            sheets_creds,
+            scopes=['https://www.googleapis.com/auth/spreadsheets']
+        )
         gc = gspread.authorize(credentials_obj)
         spreadsheet = gc.open_by_key(spreadsheet_id)
         
@@ -121,15 +137,17 @@ def write_to_google_sheet(data, spreadsheet_id, sheet_name):
             "phonenumber", "cpId", "name", "extraDetails", "verified", "businessName",
             "myInventories", "areaOfOperation", "firmSize", "firmName", "lastModified",
             "notes", "blacklisted", "gstNo", "dailyCredits", "added", "admin", "kam",
-            "reraId", "monthlyCredits","userType","trialUsed"
+            "reraId", "monthlyCredits", "userType", "trialUsed", "trialEnd"
         ]
         
         # Ensure all data rows follow the fixed column order
-        formatted_data = [[item.get(field, "") for field in fixed_columns] for item in data]
+        formatted_data = [
+            [item.get(field, "") for field in fixed_columns]
+            for item in data
+        ]
         
         data_to_write = [fixed_columns] + formatted_data
         sheet.clear()
-        # Use named parameters for update to avoid deprecation warnings
         sheet.update(values=data_to_write, range_name="A1")
         print("✅ Data written successfully with a fixed column order.")
     except Exception as e:
@@ -143,7 +161,7 @@ def main():
         data = fetch_firestore_data(collection_name)
         print("🔍 Firestore fetch completed, checking data...")
         if data:
-            spreadsheet_id = "17_9YH7wcHHlgMmBOp50AuYR0Kx0_7-DQMoO38RBI3vg"  # Hardcoded as needed
+            spreadsheet_id = "17_9YH7wcHHlgMmBOp50AuYR0Kx0_7-DQMoO38RBI3vg"
             sheet_name = "Sheet1"
             print(f"🔍 Writing {len(data)} records to Google Sheets...")
             write_to_google_sheet(data, spreadsheet_id, sheet_name)
