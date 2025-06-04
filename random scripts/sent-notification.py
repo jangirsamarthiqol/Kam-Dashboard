@@ -3,7 +3,7 @@ from firebase_admin import credentials, messaging, firestore
 from firebase_admin.exceptions import FirebaseError
 
 # 1) Init app once
-cred = credentials.Certificate('acn-resale-inventories-dde03-firebase-adminsdk-ikyw4-1d40de00d3.json')
+cred = credentials.Certificate('credentials/acn-resale-inventories-dde03-firebase-adminsdk-ikyw4-1d40de00d3.json')
 firebase_admin.initialize_app(cred)
 
 # 2) Firestore client
@@ -41,8 +41,8 @@ def send_and_prune_tokens():
         msg = messaging.Message(
             token=token,
             notification=messaging.Notification(
-                title='Basic Notification',
-                body='This is a basic notification sent from the server!'
+                title='🔔 Deal Maker Alert',
+                body='‘Make every click count.’ Browse listings, engage leads, and close deals fast.'
             )
         )
         try:

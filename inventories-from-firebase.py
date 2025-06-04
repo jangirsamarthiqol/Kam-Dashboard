@@ -124,11 +124,11 @@ def fetch_firestore_data(collection_name):
                 item.get("exclusive", ""),
                 item.get("exactFloor", ""),
                 item.get("eKhata", ""),
+                ", ".join(item.get("photo", [])) if isinstance(item.get("photo"), list) else item.get("photo", ""),
+                ", ".join(item.get("video", [])) if isinstance(item.get("video"), list) else item.get("video", ""),
                 ", ".join(item.get("document", [])) if isinstance(item.get("document"), list) else item.get("document", ""),
-                item.get("photo", ""),
-                item.get("video", ""),
-                item.get("document", ""),
-
+                item.get("builder_name", ""),
+                
             ]
             rows.append(row)
         print(f"✅ Successfully fetched {len(rows)} records from Firestore.")
@@ -170,7 +170,7 @@ def write_to_google_sheet(data):
             "Drive link for more info","Building Khata","Land Khata","Building Age",
             "Age of Inventory","Age of Status","Status","Tenanted or Not",
             "OC Received or not","Current Status","Coordinates","Exclusive","Exact Floor",
-            "eKhata","Document","Photo","Video","Document"
+            "eKhata","Photo","Video","Document","Builder Name"
         ]
         payload = [headers] + data
         # Sanitize
