@@ -87,6 +87,12 @@ def fetch_firestore_data(collection_name):
                 else:
                     item["trialEnd"] = ""
 
+                # New: compute nextRenewal based on planExpiry
+                if next_renewal := item.get("nextRenewal"):
+                    item["nextRenewal"] = convert_unix_to_date(next_renewal)
+                else:
+                    item["nextRenewal"] = ""
+
                 # Flatten list fields if needed
                 processed = {k: flatten_field(v) for k, v in item.items()}
                 rows.append(processed)
@@ -137,7 +143,7 @@ def write_to_google_sheet(data, spreadsheet_id, sheet_name):
             "phonenumber", "cpId", "name", "extraDetails", "verified", "businessName",
             "myInventories", "areaOfOperation", "firmSize", "firmName", "lastModified",
             "notes", "blacklisted", "gstNo", "dailyCredits", "added", "admin", "kam",
-            "reraId", "monthlyCredits", "userType", "trialUsed", "trialEnd"
+            "reraId", "monthlyCredits", "userType", "trialUsed", "trialEnd","nextRenewal"
         ]
         
         # Ensure all data rows follow the fixed column order
