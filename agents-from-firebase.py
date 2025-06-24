@@ -85,13 +85,16 @@ def fetch_firestore_data(collection_name):
                 if item.get("userType") in ("trial", "premium") and plan_expiry:
                     item["trialEnd"] = convert_unix_to_date(plan_expiry)
                 else:
-                    item["trialEnd"] = ""
+                    item["expiry"] = convert_unix_to_date(plan_expiry)
 
                 # New: compute nextRenewal based on planExpiry
                 if next_renewal := item.get("nextRenewal"):
                     item["nextRenewal"] = convert_unix_to_date(next_renewal)
                 else:
                     item["nextRenewal"] = ""
+
+                if "trialUsed" in item and item["trialUsed"]:
+                    item["trialStartedAt"] = convert_unix_to_date(item.get("trialStartedAt", ""))
 
                 # Flatten list fields if needed
                 processed = {k: flatten_field(v) for k, v in item.items()}
@@ -143,7 +146,7 @@ def write_to_google_sheet(data, spreadsheet_id, sheet_name):
             "phonenumber", "cpId", "name", "extraDetails", "verified", "businessName",
             "myInventories", "areaOfOperation", "firmSize", "firmName", "lastModified",
             "notes", "blacklisted", "gstNo", "dailyCredits", "added", "admin", "kam",
-            "reraId", "monthlyCredits", "userType", "trialUsed", "trialEnd","nextRenewal"
+            "reraId", "monthlyCredits", "userType", "trialUsed", "trialEnd","nextRenewal","onboardingComplete","expiry","trialUsed","trialStartedAt","areaOfOperation"
         ]
         
         # Ensure all data rows follow the fixed column order

@@ -4,7 +4,7 @@ from google.cloud import firestore
 from google.oauth2 import service_account
 
 # --- CONFIGURATION ---
-SERVICE_ACCOUNT_PATH = "masalServiceAccountKey.json"  # ← your JSON key
+SERVICE_ACCOUNT_PATH = "credentials/masalServiceAccountKey.json"  # ← your JSON key
 COLLECTION_NAME      = "Invoices"                       # exact, case-sensitive
 OUTPUT_CSV           = "invoices.csv"
 
